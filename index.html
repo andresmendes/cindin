@@ -740,7 +740,7 @@
 									stdev = sqrt(sum((x - mean).^2)/n);
 								end
 					</code></pre>
-										<pre class='fragment'><code data-trim>
+					<pre class='fragment'><code data-trim>
 					A=rand(10,1);
 					[meanA,stdA]=stat(A); %both outputs
 					meanA=stat(A); %1st output only
@@ -831,8 +831,9 @@
 			// or "visible"
 			controlsBackArrows: 'faded',
 
-			// Display a presentation progress bar
-			progress: true,
+			// Display a presentation progress bar 
+			// [removido, pois gera cliques indesejados na navegação pelo celular. Ao tentar navegar para baixo na seta inferior de controle a barra de progresso é acionada e o slide correspondente é aberto. ]
+			progress: false,
 
 			// Display the page number of the current slide
 			slideNumber: true,
