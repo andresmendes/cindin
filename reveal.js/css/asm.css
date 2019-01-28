@@ -1,0 +1,230 @@
+/* table.tableposition tbody td {
+	border-bottom: none;
+	width:50%;
+	margin:0;
+	padding:0;
+}  */
+
+/*********************************************
+ * FLEX CONTAINERS
+ *********************************************/
+
+.flex-container {
+  display: flex;
+  height: 700px;
+  align-items: stretch;
+  flex-direction: column;
+}
+
+.flex-container > div {
+	width: 100%;
+  /* margin: 10px; */
+  text-align: center;
+  /* line-height: 75px; */
+  /* font-size: 30px; */
+}
+
+/*********************************************
+ * SIDE NAVIGATION
+ *********************************************/
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  transition: 0.2s;
+   /* padding-top: 60px; */
+  /* padding-bottom: 60px; */
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 15px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+/* @media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+} */
+
+
+/*********************************************
+ * BUTTON 1
+ *********************************************/
+
+a.button1{
+display:inline-block;
+padding:5px 15px;
+border:5px solid rgb(11, 47, 77);
+margin:0 0.3em 0.3em 0;
+box-sizing: border-box;
+text-decoration:none;
+font-family:'Roboto',sans-serif;
+font-weight:600;
+font-size: 25px;
+color:rgb(11, 47, 77);
+text-align:center;
+transition: all 0.15s;
+}
+a.button1:hover{
+display:inline-block;
+padding:5px 15px;
+border:5px solid rgb(63, 109, 112);
+margin:0 0.3em 0.3em 0;
+box-sizing: border-box;
+text-decoration:none;
+font-family:'Roboto',sans-serif;
+font-weight:600;
+font-size: 25px;
+color:rgb(63, 109, 112);
+text-align:center;
+transition: all 0.15s;
+
+}
+a.button1:active{
+color:#BBBBBB;
+border-color:#BBBBBB;
+}
+  /* @media all and (max-width:30em){
+   a.button1{
+    display:block;
+    margin:0.4em auto;
+   }
+  } */
+
+/*********************************************
+ * BUTTON 2
+ *********************************************/
+
+a.button2{
+display:inline-block;
+padding:5px 15px;
+border:5px solid rgb(11, 47, 77);
+margin:0 0.0em 0.3em 0;
+box-sizing: border-box;
+text-decoration:none;
+font-family:'Roboto',sans-serif;
+font-weight:600;
+font-size: 25px;
+color:rgb(11, 47, 77);
+text-align:center;
+transition: all 0.15s;
+}
+a.button2:hover{
+display:inline-block;
+padding:5px 15px;
+border:5px solid rgb(63, 109, 112);
+margin:0 0.0em 0.3em 0;
+box-sizing: border-box;
+text-decoration:none;
+font-family:'Roboto',sans-serif;
+font-weight:600;
+font-size: 25px;
+color:rgb(63, 109, 112);
+text-align:center;
+transition: all 0.15s;
+
+}
+a.button2:active{
+color:#BBBBBB;
+border-color:#BBBBBB;
+}
+  /* @media all and (max-width:30em){
+   a.button1{
+    display:block;
+    margin:0.4em auto;
+   }
+  } */
+
+/*********************************************
+ * SLIDER BUTTON
+ *********************************************/
+
+ .switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+  /* width: 60px; */
+  /* height: 34px; */
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 20px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(22px);
+  -ms-transform: translateX(22px);
+  transform: translateX(22px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}

@@ -1,12 +1,998 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
+
 <head>
-	<title>My page</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+	<meta name="author" content="Hakim El Hattab">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+	<title>ME7820 - Cinemática e Dinâmica Aplicada para Automação</title>
+
+	<link rel="stylesheet" href="reveal.js/css/revealasm.css">
+	<link rel="stylesheet" href="reveal.js/css/theme/whiteasm.css" id="theme">
+	<!-- My class files -->
+	<link rel="stylesheet" href="reveal.js/css/asm.css">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="reveal.js/lib/css/zenburn.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'reveal.js/css/print/pdf.css' : 'reveal.js/css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+
 </head>
+
 <body>
 
-	<img src="images/logo.svg">
-	<img src="images/fm.png">
+	<div id="mySidenav" class="sidenav">
+
+		<div style="width:100%;height:60px">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		</div>
+
+		<div style="width:100%;margin-bottom: 60px">
+			<a href="#/inicial">Página principal</a>
+			<a href="#/intro">0 - Introdução: Cinemática e dinâmica</a>
+			<a href="#/cinpontomovret">1 - Cinemática do ponto: Movimento retilíneo</a>
+			<a href="#/cinpontomovgeral">2 - Cinemática do ponto: Movimento geral</a>
+			<a href="#/4">3 - Cinemática do corpo rígido: Movimento geral</a>
+			<a href="#/5">4 - Cinemática do corpo rígido: Movimento plano</a>
+			<a href="#/6">5 - Composição de movimentos: Velocidade e aceleração</a>
+			<a href="#/7">6 - Dinâmica do ponto material: Leis fundamentais</a>
+			<a href="#/8">7 - Dinâmica do ponto material: Teoremas gerais</a>
+			<a href="#/9">8 - Dinâmica dos sistemas materiais: TMB</a>
+			<a href="#/10">9 - Dinâmica dos sistemas materiais: TMA</a>
+			<a href="#/dinsol">10 - Dinâmica dos sólidos</a>
+		</div>
+
+	</div>
+
+	<div class="reveal" onclick="closeNav()">
+		<div class="slides">
+
+			<section>
+				<section id="inicial">
+
+					<div style="width:100%;position: relative; height: 700px;">
+						<div style="width:100%;position:absolute;top:250px;text-align: center">
+
+							<h3>ME7820 - Cinemática e Dinâmica</h3>
+							<p style="font-size:20px">Criado por André de S. Mendes</p>
+
+						</div>
+						<div style="width:100%;position:absolute; bottom:30px;">
+
+							<a href="https://moodle.fei.edu.br/moodle/course/view.php?id=1305" target="_blank" title="Moodle"><img src="ilustracoes/logoMoodle.png"
+								 alt="Logo Moodle" style="height: 65px; vertical-align: middle;"></a>
+
+							<a href="https://github.com/andresmendes/newrepo" target="_blank" title="GitHub"><img src="ilustracoes/logoGitHub.png"
+								 alt="Logo GitHub" style="height: 65px; vertical-align: middle;"></a>
+
+							<a href="#ajuda" class="button1" title="Ajuda" style="position:absolute ; left:30px; bottom:0px">?</a>
+
+						</div>
+					</div>
+
+					<aside class="notes">
+						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the
+						speaker
+						notes window (hit »S« on your keyboard).
+					</aside>
+				</section>
+
+				<section id="ajuda">
+					<h3>Primeiros passos</h3>
+
+					<ul style="font-size:35px">
+						<li>Navegue pelas páginas utilizando as <span style="color:#2a76dd">setas de controle</span> à direita.</li>
+						<li>Acesse diretamente os tópico através do menu à esquerda (<span style="font-family: Helvetica, sans-serif ;font-size:25px;cursor:pointer;">&#9776;</span>).</li>
+						<li>Os diferentes tópicos estão distribuídos na horizontal.</li>
+						<li>O conteúdo de cada tópico está na vertical.</li>
+						<li>Pressione a tecla <kbd>ESC</kbd> para visualizar as páginas ao redor.</li>
+						<li>Baixe a última versão deste material clicando <a href="">aqui</a>.</li>
+					</ul>
+				</section>
+			</section>
+
+			<section>
+				<section id="intro">
+					<h3>
+						Introdução ao curso
+					</h3>
+				</section>
+
+				<section data-background-image="ilustracoes/introWaymoFleet.jpeg" data-background-size="100%">
+
+				</section>
+
+				<section>
+					<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/ZPBlO-jm2E4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+					<!-- <iframe width="420" height="345" src="https://www.youtube.com/embed/ZPBlO-jm2E4" frameborder="0" allowfullscreen></iframe>
+-->
+					<iframe allowfullscreen="" data-src="https://www.youtube.com/embed/WBkgs4u5tW0?start=85;end=166;cc_load_policy=1;autoplay=1"
+					 width="100%" height="700px" frameborder="0"></iframe>
+
+				</section>
+
+				<section>
+
+					<table style="font-size: 30px;width:70%">
+						<tr>
+							<th>
+								<p>Modal</p>
+							</th>
+							<th>
+								<p>Milhões [TKU]</p>
+							</th>
+							<th>
+								<p>Participação [%]</p>
+							</th>
+						</tr>
+						<tr>
+							<td>
+								<p>Rodoviário</p>
+							</td>
+							<td>
+								<p>485.625</p>
+							</td>
+							<td>
+								<p>61,1</p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p>Ferroviário</p>
+							</td>
+							<td>
+								<p>164.809</p>
+							</td>
+							<td>
+								<p>20,7</p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p>Aquaviário</p>
+							</td>
+							<td>
+								<p>108.000</p>
+							</td>
+							<td>
+								<p>13,6</p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p>Dutoviário</p>
+							</td>
+							<td>
+								<p>33.300</p>
+							</td>
+							<td>
+								<p>4,2</p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p>Aéreo</p>
+							</td>
+							<td>
+								<p>3.169</p>
+							</td>
+							<td>
+								<p>0,4</p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p style="font-weight: 600">Total</p>
+							</td>
+							<td>
+								<p style="font-weight: 600">794.903</p>
+							</td>
+							<td>
+								<p style="font-weight: 600">100,0</p>
+							</td>
+						</tr>
+					</table>
+
+					<p style="font-size: 25px;"><a href="http://www.cnt.org.br/Boletim/boletim-estatistico-cnt" target="_blank">CNT</a>:
+						Movimentação anual da matriz de transporte de carga no Brasil em 2016.</p>
+
+				</section>
+
+				<section>
+
+					<img src="ilustracoes/introEmissionsBrasilPT.svg" alt="Emissões Brasil" style="width:90%;">
+
+					<p style="font-size: 25px;"><a href="http://www.cnt.org.br/Boletim/boletim-estatistico-cnt" target="_blank">MCTI</a>:
+						Emissões de CO 2 no Brasil em 2010.</p>
+
+				</section>
+
+				<section data-background-image="ilustracoes/introPlatoon.jpg" data-background-size="100%">
+
+				</section>
+
+				<section>
+
+					<img src="ilustracoes/introCoeficientePressao.svg" alt="Coeficiente de pressão" style="width:90%">
+
+					<p style="font-size: 25px;"><a href="http://www.cnt.org.br/Boletim/boletim-estatistico-cnt" target="_blank">Liang,
+							2016</a>: Campo de pressão no plano de simetria de um comboio de dois caminhões para diferentes
+						distâncias de separação.</p>
+					<!-- Fuel-Efficient Heavy-Duty Vehicle Platoon Formation. 2016. Tese(Doutorado) – KTH ROYAL INSTITUTE OF TECHNOLOGY. -->
+				</section>
+
+				<section>
+
+					<img src="ilustracoes/introEcodriving.jpeg" alt="BR-364" style="width:100%">
+
+				</section>
+
+				<section>
+
+					<img src="ilustracoes/introSpeedOptimization.png" alt="Speed Optimization" style="width:70%;">
+
+					<p style="font-size: 25px;"><a href="http://www.cnt.org.br/Boletim/boletim-estatistico-cnt" target="_blank">Huang,
+							2018</a>:
+						Fluxograma para otimização do perfil de velocidade.</p>
+					<!-- Ecological Driving System for Connected/Automated Vehicles Using a Two-StageControl Hierarchy -->
+				</section>
+
+				<section>
+
+					<img src="ilustracoes/introLogoMatlab.svg" alt="Logo Matlab">
+
+				</section>
+
+				<section>
+
+					<img src="ilustracoes/introCinematicaExercicio.png" alt="Cinemática Exercício" style="width: 70%">
+
+				</section>
+
+				<section>
+
+					<img src="ilustracoes/introModeloCarro.svg" alt="Modelo Carro" style="width:60%">
+
+				</section>
+
+				<section>
+
+					<img src="ilustracoes/introModeloCaminhao.svg" alt="Modelo Caminhão" style="width:80%">
+
+				</section>
+
+			</section>
+
+			<section>
+				<section id="cinpontomovret">
+
+					<h3>Cinemática do ponto</h3>
+					<h5>Movimento retilíneo</h5>
+
+				</section>
+
+				<section>
+
+					<h5 style="margin-bottom: 50px">Posição</h5>
+					<img src="ilustracoes/cinpontomovretPosicao.svg" style="border:0;box-shadow: 0 0 0px;width:50%">
+					<p class="fragment fade-in">\(x(t) = 6 t^2 - t^3\)</p>
+
+				</section>
+
+				<section>
+
+					<div style="width:100%">
+
+						<h5 style="margin-bottom: 50px">Velocidade</h5>
+						<br>
+						<img src="ilustracoes/cinpontomovretVelocidade.svg" style="border:0;box-shadow: 0 0 0px;width:50%">
+
+					</div>
+
+					<div class="fragment fade-in" style="width:50%; height:140px; float:left; background-color: rgb(168, 188, 253); display:flex; align-items:center; justify-content: center; margin-bottom: 20px">
+						<p>\[\scriptsize \bar{v} = \frac{\Delta
+							x}{\Delta t}\]</p>
+					</div>
+
+					<div class="fragment fade-in" style="width:50%; height:140px; float:right; display:flex; align-items:center; margin-bottom: 20px">
+
+						<p style="font-size:30px; margin-left: 25px;">Velocidade média</p>
+
+					</div>
+
+					<div class="fragment fade-in" style="width:50%; height:140px; float:left; background-color:rgb(168, 188, 253); display:flex; align-items:center; justify-content: center">
+
+						<p>\[\scriptsize v(t) = \lim_{\Delta t
+							\to 0} \frac{\Delta x}{\Delta t} = \frac{dx}{dt} \]</p>
+
+					</div>
+
+					<div class="fragment fade-in" style="width:50%; height:140px; float:right; display:flex; align-items:center">
+
+						<p style="font-size:30px; margin-left: 25px;">Velocidade instantânea</p>
+
+					</div>
+
+				</section>
+
+				<section>
+
+					<div style="width:100%">
+
+						<h5 style="margin-bottom: 50px">Aceleração</h5>
+						<br>
+						<img src="ilustracoes/cinpontomovretAceleracao.svg" style="border:0;box-shadow: 0 0 0px;width:50%">
+
+					</div>
+
+					<div class="fragment fade-in" data-fragment-index="1" style="width:50%; height:140px; float:left; background-color: rgb(168, 188, 253); display:flex; align-items:center; justify-content: center; margin-bottom: 20px">
+						<p>\[\scriptsize \bar{a} = \frac{\Delta v}{\Delta t}\]</p>
+					</div>
+
+					<div class="fragment fade-in" data-fragment-index="1" style="width:50%; height:140px; float:right; display:flex; align-items:center; margin-bottom: 20px">
+
+						<p style="font-size:30px; margin-left: 25px;">Aceleração média</p>
+
+					</div>
+
+					<div class="fragment fade-in" data-fragment-index="2" style="width:50%; height:140px; float:left; background-color:rgb(168, 188, 253); display:flex; align-items:center; justify-content: center">
+
+						<p>\[\scriptsize a(t) = \lim_{\Delta t
+							\to 0} \frac{\Delta v}{\Delta t} = \frac{dv}{dt} \]</p>
+
+					</div>
+
+					<div class="fragment fade-in" data-fragment-index="2" style="width:50%; height:140px; float:right; display:flex; align-items:center">
+
+						<p style="font-size:30px; margin-left: 25px;">Aceleração instantânea</p>
+
+					</div>
+
+				</section>
+
+				<section>
+
+					<div class="flex-container">
+						<div style="height:100px">
+							<p style="margin:10;">\[\scriptsize x(t) = 6 t^2 - t^3\]</p>
+						</div>
+						<div style="flex-grow: 1;">
+							<img src="ilustracoes/cinpontomovretGraficoPosicao.svg" style="height:100%;">
+						</div>
+						<div style="height:180px">
+							<div class="fragment fade-in;" style="height:140px; display:flex; align-items:center; background-color:rgb(168, 188, 253); float: left; margin-left:10px; padding:10px">
+								<p>\[\scriptsize \bar{v} = \tan \beta = \frac{\Delta x}{\Delta t}\]</p>
+							</div>
+							<div class="fragment fade-in;" style="height:140px; display:flex; align-items:center; background-color:rgb(168, 188, 253); float: right; margin-right: 10px; padding:10px">
+								<p>\[\scriptsize v(t) = \lim_{\Delta t \to 0} \frac{\Delta x}{\Delta t} = \tan \theta\]</p>
+							</div>
+						</div>
+					</div>
+
+					<aside class="notes">
+						No gráfico de posição, velocidade é a inclinação da curva.
+					</aside>
+
+				</section>
+
+				<section>
+
+					<div class="flex-container">
+						<div style="height:100px">
+							<p style="margin:10;">\[\scriptsize x(t) = 6 t^2 - t^3 \rightarrow v = 12 t - 3 t^2\]</p>
+						</div>
+						<div style="flex-grow: 1;">
+							<img src="ilustracoes/cinpontomovretGraficoVelocidade.svg" style="height:100%;">
+						</div>
+						<div style="height:180px">
+							<div class="fragment fade-in;" style="height:140px; display:flex; align-items:center; background-color:rgb(168, 188, 253); float: left; margin-left:10px; padding:10px">
+								<p>\[\scriptsize a(t) = \lim_{\Delta t \to 0} \frac{\Delta v}{\Delta t} = \tan \alpha \]</p>
+							</div>
+							<div class="fragment fade-in;" style="height:140px; display:flex; align-items:center; background-color:rgb(168, 188, 253); float: right ; margin-right: 10px; padding:10px">
+								<p>\(\scriptsize x(t_f) - x(t_i) = \int^{t_f}_{t_i} v dt = A\)</p>
+							</div>
+						</div>
+					</div>
+
+					<aside class="notes">
+
+						No gráfico de velocidade, aceleração é a inclinação da curva.
+					</aside>
+
+				</section>
+
+				<section>
+					<p>\[\frac{dx}{dt} = v\]</p>
+					<p class="fragment fade-in">\[dx = v \, dt\]</p>
+					<p class="fragment fade-in">\[\int^{t_f}_{t_i} dx = \int^{t_f}_{t_i} v \, dt\]</p>
+					<p class="fragment fade-in">\[x(t_f) - x(t_i) = \int^{t_f}_{t_i} v \, dt = A\]</p>
+				</section>
+
+				<section>
+
+					<div style="height:100px">
+						<p style="margin:10;">\[\scriptsize x(t) = 6 t^2 - t^3 \rightarrow v = 12 t - 3 t^2 \rightarrow a = 12 - 6 t\]</p>
+					</div>
+
+					<div style="width:50%; float: left;">
+						<img src="ilustracoes/cinpontomovretGraficoAceleracao.svg" style="width:100%;">
+					</div>
+					<div style="width:50%; float:right;">
+						<p>\[\scriptsize \frac{dv}{dt} = a\]</p>
+						<p class="fragment fade-in">\[\scriptsize dv = a \, dt\]</p>
+						<p class="fragment fade-in">\[\scriptsize \int^{t_f}_{t_i} dv = \int^{t_f}_{t_i} a \, dt\]</p>
+						<p class="fragment fade-in">\[\tiny v(t_f) - v(t_i) = \int^{t_f}_{t_i} a \, dt = A_1 - A_2\]</p>
+
+					</div>
+
+					<aside class="notes">
+						Atenção à contribuição negativa da área \(A_2\).
+					</aside>
+
+				</section>
+
+				<section>
+
+					<div class="flex-container">
+
+						<div style="width:100%; flex-grow: 1;">
+
+
+							<p style="text-align: justify; margin-top: 150px">Um automóvel inicia frenagem a partir de uma velocidade
+								inicial de 72 km/h com
+								aceleração dada por \(a(t) = -2
+								+ 0,04 t \) [m/s2].</p>
+
+							<p style="text-align: justify;"> Determine o tempo de frenagem até que o veículo fique em repouso.</p>
+
+						</div>
+
+						<div style="width:100%; height:100px;">
+
+							<a href="#ajuda" class="button2" style="float: left; margin: 10px; align-content: center;" title="Leitura recomendada">Leitura
+								recomendada</a>
+							<a href="#ajuda" class="button2" style="float: left; margin: 10px; align-content: center;" title="Mais exercícios">Mais
+								exercícios</a>
+							<a href="#ajuda" class="button2" style="float: left; margin: 10px; align-content: center;" title="Dúvidas">Dúvidas</a>
+
+						</div>
+
+					</div>
+
+				</section>
+
+			</section>
+
+			<section>
+
+				<section id="cinpontomovgeral">
+
+					<h3>Cinemática do ponto</h3>
+					<h5>Movimento geral</h5>
+
+				</section>
+
+				<section>
+
+					<div style="width: 100%;">
+
+						<h5>Sistemas de coordenadas</h5>
+
+						<p style="font-size: 25px; text-align: justify; padding:10px">Sistema de coordenadas é o conjunto de coordenadas
+							utilizadas
+							para descrever a
+							cinemática de um ponto ou conjunto de pontos.</p>
+
+					</div>
+
+					<div style="width: 50%;float:left;">
+
+						<img class="fragment fade-in" data-fragment-index="1" style="width:100%" src="ilustracoes/cinpontomovgeralSistCoordCili.svg"
+						 alt="Sistema de coordenadas cilíndricas">
+
+					</div>
+
+					<div style="width: 50%; float:right; margin:0px;">
+
+						<img class="fragment fade-in" data-fragment-index="3" style="width:100%" src="ilustracoes/cinpontomovgeralSistCoordCart.svg"
+						 alt="Sistema de coordenadas cartesianas">
+
+					</div>
+
+					<div style="width: 50%;float:left;">
+
+						<p class="fragment fade-in" data-fragment-index="2">Coordenadas cilíndricas</p>
+
+					</div>
+
+					<div style="width: 50%; float:right; margin:0px;">
+
+						<p class="fragment fade-in" data-fragment-index="4">Coordenadas cartesianas</p>
+
+					</div>
+
+				</section>
+
+				<section>
+
+					<h5>Base</h5>
+
+					<p style="font-size: 25px; text-align: justify; padding:10px;">Sistema de referência é a base, geralmente
+						ortonormal, utilizada para descrever as
+						quantidades vetoriais da cinemática em relação ao referencial.</p>
+
+					<img class="fragment fade-in" style="width:90%" src="ilustracoes/cinpontomovgeralBase.svg" alt="Base">
+
+				</section>
+
+				<section>
+
+					<h5>Referencial</h5>
+
+					<p style="font-size: 25px; text-align: justify; padding:10px;">Referencial é qualquer corpo em relação ao qual se
+						estuda o problema e se determinam as
+						caracterı́sticas cinemáticas (posição, velocidade e aceleração)</p>
+
+					<img class="fragment fade-in" style="width:50%" src="ilustracoes/cinpontomovgeralReferencial.svg" alt="Referencial"></p>
+
+				</section>
+
+				<section>
+
+					<div style="width: 100%;background-color: aqua">
+
+						<h5>Base fixa</h5>
+
+					</div>
+
+					<div style="width: 50%; float:left ;background-color: blue;">
+
+						<p class="fragment fade-in" data-fragment-index="1" style="margin:0px;padding:0px;"><img src="ilustracoes/cinpontomovgeralBaseFixaPrincipal.svg"
+							 alt="Base fixa principal"></p>
+					</div>
+
+					<div style="width: 50%; float:right;background-color:coral;">
+
+<ul>
+	<li>Coordenadas cartesianas \((x, \, y, \, z)\)</li>
+	<li>Base fixa \(\{O \, \vec{i} \, \vec{j} \, \vec{k}\}\)</li>
+</ul>
+					</div>
+
+<div style="width:100%; height:300;">
+<p style="font-size: 15px">Vetor posição: \(\vec{r} = (P - O) = x \vec{i} + y \vec{j} + z \vec{k}\)</p>
+<p>Vetor velocidade: \(\vec{v} = \frac{d \vec{r}}{dt}= \dot{x} \vec{i} + x \dot{\vec{i}} + \dot{y} \vec{j} + y \dot{\vec{j}} + \dot{z} \vec{k} + z \dot{\vec{k}}\)</p>
+
+</div>
+
+				</section>
+
+				<section>
+
+					<div style="width: 100%;background-color: aqua">
+
+						<h5>Base fixa</h5>
+
+					</div>
+
+					<div style="width: 50%;float:left ;background-color: blue">
+
+						<p class="fragment fade-in" data-fragment-index="1" style="margin:0px;padding:0px;"><img src="ilustracoes/cinpontomovgeralBaseFixaPrincipal.svg"
+							 alt="Base fixa principal"></p>
+					</div>
+
+					<div style="width: 50%; float:right;background-color:coral">
+
+						<p class="fragment fade-in" data-fragment-index="2" style="margin:0px;padding:0px;"><img src="ilustracoes/cinpontomovgeralBaseFixaAuxiliar.svg"
+							 alt="Base fixa auxiliar"></p>
+
+					</div>
+
+				</section>
+
+				<section>
+
+					<div style="width: 100%;background-color: aqua">
+
+						<h5>Base móvel</h5>
+
+					</div>
+
+					<div style="width: 50%;float:left ;background-color: blue">
+
+						<p class="fragment fade-in" data-fragment-index="1" style="margin:0px;padding:0px;"><img src="ilustracoes/cinpontomovgeralBaseMovelPrincipal.svg"
+							 alt="Base fixa principal"></p>
+					</div>
+
+					<div style="width: 50%; float:right;background-color:coral">
+
+						<p class="fragment fade-in" data-fragment-index="2" style="margin:0px;padding:0px;"><img src="ilustracoes/cinpontomovgeralBaseMovelAuxiliar.svg"
+							 alt="Base fixa auxiliar"></p>
+
+					</div>
+
+				</section>
+
+				<section>
+
+					<div style="width: 100%;background-color: aqua">
+
+						<h5>Componentes tangencial e normal</h5>
+
+					</div>
+
+					<div style="width: 50%;float:left ;background-color: blue">
+
+						<p class="fragment fade-in" data-fragment-index="1" style="margin:0px;padding:0px;"><img src="ilustracoes/cinpontomovgeralCompPrincipal.svg"
+							 alt="Componentes principal"></p>
+					</div>
+
+					<div style="width: 50%; float:right;background-color:coral">
+
+						<p class="fragment fade-in" data-fragment-index="2" style="margin:0px;padding:0px;"><img src="ilustracoes/cinpontomovgeralCompAuxiliar.svg"
+							 alt="Componentes auxiliar"></p>
+
+					</div>
+
+				</section>
+
+				<section>
+
+					A posição do ponto \(P\) é dada por
+
+					\begin{equation*}
+					(P - O) = \left( t \sin t + \cos t \right) \vec{i} + \left( -t \cos t + \sin t \right)\vec{j} + t^2 \vec{k}
+					\end{equation*}
+					onde \(\{O\vec{i}\vec{j}\vec{k}\} \rightarrow\) base fixa.
+
+					Determine:
+
+					a) O vetor velocidade \(\vec{v}\) e o módulo do vetor velocidade \(v\).
+
+					b) O deslocamento do ponto em função do tempo \(s = s(t)\) com \(s(t=0)=0\).
+
+					c) Os versores tangente \(\vec{t}\) e normal \(\vec{n}\) em função dos versores da base \(\vec{i}\), \(\vec{j}\) e
+					\(\vec{k}\) e o raio de curvatura \(\rho\) em função de \(t\).
+
+					d) Acelerações normal e tangencial em função dos versores \(\vec{i}\), \(\vec{j}\) e \(\vec{k}\).
+
+				</section>
+
+			</section>
+
+			<section>
+
+				<section>
+
+
+					<h3>Cinemática do corpo</h3>
+					<h5>Movimento geral</h5>
+
+				</section>
+
+			</section>
+
+			<section>
+				<section>
+					Cinemática do corpo rígido: Movimento plano
+				</section>
+			</section>
+
+			<section>
+				<section>
+					Composição de movimentos: Velocidade e aceleração
+				</section>
+			</section>
+
+			<section>
+				<section>
+					Dinâmica do ponto material: Leis fundamentais
+				</section>
+			</section>
+
+			<section>
+				<section>
+					Dinâmica do ponto material: Teoremas gerais
+				</section>
+			</section>
+
+			<section>
+				<section>
+					Dinâmica dos sistemas materiais: TMB
+				</section>
+			</section>
+
+			<section>
+				<section>
+					Dinâmica dos sistemas materiais: TMA
+				</section>
+			</section>
+
+			<section>
+				<section id="dinsol">
+					Dinâmica dos sólidos
+				</section>
+
+				<section>
+					<h3>Functions</h3>
+				</section>
+				<section>
+
+					<h3>Functions</h3>
+
+					<pre><code data-trim>
+function [mean,stdev] = stat(x)
+            %STAT Interesting statistics.
+            n = length(x);
+            mean = sum(x) / n;
+            stdev = sqrt(sum((x - mean).^2)/n);
+        end
+</code></pre>
+					<pre class='fragment'><code data-trim>
+A=rand(10,1);
+[meanA,stdA]=stat(A); %both outputs
+meanA=stat(A); %1st output only
+[~,stdA]=star(A); %2nd output only
+</code></pre>
+				</section>
+
+			</section>
+
+
+
+		</div>
+	</div>
+
+	<div style="position:absolute; z-index:1; float:right; top:10px; right:10px;margin:0;padding:0">
+		<a href="https://portal.fei.edu.br/" target="_blank"><img src="ilustracoes/logoFEI.png" alt="Logo FEI" title="Centro Universitário FEI"
+			 style="width:80px; margin-top:0"></a>
+	</div>
+
+	<div style="position:absolute;float:left;z-index:1; margin:10px;top:0px;">
+		<!-- <p style="margin:0; padding:0;"> -->
+
+		<span title="Tópicos" style="font-family: Helvetica, sans-serif ;font-size:22px;font-weight: bolder;cursor:pointer;background-color: rgba(255, 255, 255, 0.8);padding: 0px 5px 3px 5px ; margin:0;"
+		 onclick="openNav();">&#9776;</span>
+		<!-- </p> -->
+
+		<!-- OUTRA OPÇÃO: -->
+		<!-- <span title="Tópicos" style="font-family: Helvetica, sans-serif ;font-size:25px;font-weight: 500;cursor:pointer;background-color: rgba(255, 255, 255, 0.8);padding:5px;"
+					onclick="openNav();">&#9776;</span> -->
+
+		<!-- SPEAKER NOTES BUTTON -->
+		<p style="margin-top:10px; padding:0;">
+			<label title="Anotações" class="switch">
+				<input type="checkbox" id='speakerSwitch' onclick="speakerNotes()">
+				<span class="slider"></span>
+			</label>
+		</p>
+		<!-- <a href="javascript:void(0)" class="closebtn" onclick="speakerNotes()">&times;</a> -->
+
+	</div>
+
+
+	<script src="reveal.js/lib/js/head.min.js"></script>
+	<script src="reveal.js/js/reveal.js"></script>
+
+	<script>
+		// More info about config & dependencies:
+		// - https://github.com/hakimel/reveal.js#configuration
+		// - https://github.com/hakimel/reveal.js#dependencies
+		Reveal.initialize({
+			dependencies: [
+				// Cross-browser shim that fully implements classList - https://github.com/eligrey/classList.js/
+				{ src: 'reveal.js/lib/js/classList.js', condition: function () { return !document.body.classList; } },
+
+				// Interpret Markdown in <section> elements
+				{ src: 'reveal.js/plugin/markdown/marked.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+				{ src: 'reveal.js/plugin/markdown/markdown.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+
+				// Syntax highlight for <code> elements
+				{ src: 'reveal.js/plugin/highlight/highlight.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } },
+
+				// Zoom in and out with Alt+click
+				{ src: 'reveal.js/plugin/zoom-js/zoom.js', async: true },
+
+				// Speaker notes
+				{ src: 'reveal.js/plugin/notes/notes.js', async: true },
+
+				// MathJax
+				{ src: 'reveal.js/plugin/math/math.js', async: true }
+			],
+
+			math: {
+				mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js',
+				config: 'TeX-AMS_HTML-full'  // See http://docs.mathjax.org/en/latest/config-files.html
+			},
+
+			// Display presentation control arrows
+			controls: true,
+
+			// Help the user learn the controls by providing hints, for example by
+			// bouncing the down arrow when they first encounter a vertical slide
+			controlsTutorial: true,
+
+			// Determines where controls appear, "edges" or "bottom-right"
+			controlsLayout: 'bottom-right',
+
+			// Visibility rule for backwards navigation arrows; "faded", "hidden"
+			// or "visible"
+			controlsBackArrows: 'faded',
+
+			// Display a presentation progress bar
+			progress: true,
+
+			// Display the page number of the current slide
+			slideNumber: true,
+
+			// Push each slide change to the browser history
+			history: true,
+
+			// Enable keyboard shortcuts for navigation
+			keyboard: true,
+
+			// Enable the slide overview mode
+			overview: true,
+
+			// Vertical centering of slides
+			center: true,
+
+			// Enables touch navigation on devices with touch input
+			touch: true,
+
+			// Loop the presentation
+			loop: false,
+
+			// Change the presentation direction to be RTL
+			rtl: false,
+
+			// Randomizes the order of slides each time the presentation loads
+			shuffle: false,
+
+			// Turns fragments on and off globally
+			fragments: true,
+
+			// Flags whether to include the current fragment in the URL,
+			// so that reloading brings you to the same fragment position
+			fragmentInURL: false,
+
+			// Flags if the presentation is running in an embedded mode,
+			// i.e. contained within a limited portion of the screen
+			embedded: false,
+
+			// Flags if we should show a help overlay when the questionmark
+			// key is pressed
+			help: true,
+
+			// Flags if speaker notes should be visible to all viewers
+			showNotes: false,
+
+			// Global override for autoplaying embedded media (video/audio/iframe)
+			// - null: Media will only autoplay if data-autoplay is present
+			// - true: All media will autoplay, regardless of individual setting
+			// - false: No media will autoplay, regardless of individual setting
+			autoPlayMedia: true,
+
+			// Number of milliseconds between automatically proceeding to the
+			// next slide, disabled when set to 0, this value can be overwritten
+			// by using a data-autoslide attribute on your slides
+			autoSlide: 0,
+
+			// Stop auto-sliding after user input
+			autoSlideStoppable: true,
+
+			// Use this method for navigation when auto-sliding
+			autoSlideMethod: Reveal.navigateNext,
+
+			// Specify the average time in seconds that you think you will spend
+			// presenting each slide. This is used to show a pacing timer in the
+			// speaker view
+			defaultTiming: 120,
+
+			// Enable slide navigation via mouse wheel
+			mouseWheel: true,
+
+			// Hides the address bar on mobile devices
+			hideAddressBar: true,
+
+			// Opens links in an iframe preview overlay
+			// Add `data-preview-link` and `data-preview-link="false"` to customise each link
+			// individually
+			previewLinks: false,
+
+			// Transition style
+			transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+			// Transition speed
+			transitionSpeed: 'default', // default/fast/slow
+
+			// Transition style for full page slide backgrounds
+			backgroundTransition: 'slide', // none/fade/slide/convex/concave/zoom
+
+			// Number of slides away from the current that are visible
+			viewDistance: 3,
+
+			// Parallax background image
+			// parallaxBackgroundImage: '', // e.g. "'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg'"
+
+			// Parallax background size
+			// parallaxBackgroundSize: '', // CSS syntax, e.g. "2100px 900px"
+
+			// Number of pixels to move the parallax background per slide
+			// - Calculated automatically unless specified
+			// - Set to 0 to disable movement along an axis
+			// parallaxBackgroundHorizontal: null,
+			// parallaxBackgroundVertical: null,
+
+			// The display mode that will be used to show slides
+			display: 'block',
+
+			// The "normal" size of the presentation, aspect ratio will be preserved
+			// when the presentation is scaled to fit different resolutions. Can be
+			// specified using percentage units.
+			width: 960,
+			height: 700,
+
+			// // Factor of the display size that should remain empty around the content
+			margin: 0,
+
+			// // Bounds for smallest/largest possible scale to apply to content
+			// minScale: 0.2,
+			maxScale: 1.5,
+
+			pdfMaxPagesPerSlide: 1,
+			pdfSeparateFragments: false,
+		});
+
+	</script>
+
+
+
+	<script>
+		function openNav() {
+			document.getElementById("mySidenav").style.width = "250px";
+			document.getElementById("main").style.marginLeft = "250px";
+		}
+
+		function closeNav() {
+			document.getElementById("mySidenav").style.width = "0";
+			document.getElementById("main").style.marginLeft = "0";
+		}
+
+
+
+		// TOGGLE SPEAKER NOTES
+		function speakerNotes() {
+			var x = document.getElementById("speakerSwitch");
+			if (x.checked == true) {
+				Reveal.configure({ showNotes: true });
+			} else {
+				Reveal.configure({ showNotes: false });
+
+			}
+		}
+
+		// function speakerNotes() {
+		// 		Reveal.configure({ showNotes: true });
+		// 	}
+
+
+	</script>
+
+
+
 
 </body>
+
 </html>
