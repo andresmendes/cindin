@@ -43,13 +43,13 @@
 			<a href="#/intro">0 - Introdução: Cinemática e dinâmica</a>
 			<a href="#/cinpontomovret">1 - Cinemática do ponto: Movimento retilíneo</a>
 			<a href="#/cinpontomovgeral">2 - Cinemática do ponto: Movimento geral</a>
-			<a href="#/4">3 - Cinemática do corpo rígido: Movimento geral</a>
-			<a href="#/5">4 - Cinemática do corpo rígido: Movimento plano</a>
-			<a href="#/6">5 - Composição de movimentos: Velocidade e aceleração</a>
-			<a href="#/7">6 - Dinâmica do ponto material: Leis fundamentais</a>
-			<a href="#/8">7 - Dinâmica do ponto material: Teoremas gerais</a>
-			<a href="#/9">8 - Dinâmica dos sistemas materiais: TMB</a>
-			<a href="#/10">9 - Dinâmica dos sistemas materiais: TMA</a>
+			<a href="#/cincorpomovgeral">3 - Cinemática do corpo rígido: Movimento geral</a>
+			<a href="#/cincorpomovplano">4 - Cinemática do corpo rígido: Movimento plano</a>
+			<a href="#/compmov">5 - Composição de movimentos: Velocidade e aceleração</a>
+			<a href="#/dpmleis">6 - Dinâmica do ponto material: Leis fundamentais</a>
+			<a href="#/dpmteoremas">7 - Dinâmica do ponto material: Teoremas gerais</a>
+			<a href="#/dsmtmb">8 - Dinâmica dos sistemas materiais: TMB</a>
+			<a href="#/dsmtma">9 - Dinâmica dos sistemas materiais: TMA</a>
 			<a href="#/dinsol">10 - Dinâmica dos sólidos</a>
 		</div>
 
@@ -564,17 +564,18 @@
 
 					<div style="width: 50%; float:right;background-color:coral;">
 
-<ul>
-	<li>Coordenadas cartesianas \((x, \, y, \, z)\)</li>
-	<li>Base fixa \(\{O \, \vec{i} \, \vec{j} \, \vec{k}\}\)</li>
-</ul>
+						<ul>
+							<li>Coordenadas cartesianas \((x, \, y, \, z)\)</li>
+							<li>Base fixa \(\{O \, \vec{i} \, \vec{j} \, \vec{k}\}\)</li>
+						</ul>
 					</div>
 
-<div style="width:100%; height:300;">
-<p style="font-size: 15px">Vetor posição: \(\vec{r} = (P - O) = x \vec{i} + y \vec{j} + z \vec{k}\)</p>
-<p>Vetor velocidade: \(\vec{v} = \frac{d \vec{r}}{dt}= \dot{x} \vec{i} + x \dot{\vec{i}} + \dot{y} \vec{j} + y \dot{\vec{j}} + \dot{z} \vec{k} + z \dot{\vec{k}}\)</p>
+					<div style="width:100%; height:300;">
+						<p style="font-size: 15px">Vetor posição: \(\vec{r} = (P - O) = x \vec{i} + y \vec{j} + z \vec{k}\)</p>
+						<p>Vetor velocidade: \(\vec{v} = \frac{d \vec{r}}{dt}= \dot{x} \vec{i} + x \dot{\vec{i}} + \dot{y} \vec{j} + y
+							\dot{\vec{j}} + \dot{z} \vec{k} + z \dot{\vec{k}}\)</p>
 
-</div>
+					</div>
 
 				</section>
 
@@ -673,7 +674,7 @@
 
 			<section>
 
-				<section>
+				<section id="cincorpomovgeral">
 
 
 					<h3>Cinemática do corpo</h3>
@@ -684,37 +685,37 @@
 			</section>
 
 			<section>
-				<section>
+				<section id="cincorpomovplano">
 					Cinemática do corpo rígido: Movimento plano
 				</section>
 			</section>
 
 			<section>
-				<section>
+				<section id="compmov">
 					Composição de movimentos: Velocidade e aceleração
 				</section>
 			</section>
 
 			<section>
-				<section>
+				<section id="dpmleis">
 					Dinâmica do ponto material: Leis fundamentais
 				</section>
 			</section>
 
 			<section>
-				<section>
+				<section id=dpmteoremas>
 					Dinâmica do ponto material: Teoremas gerais
 				</section>
 			</section>
 
 			<section>
-				<section>
+				<section id="dsmtmb">
 					Dinâmica dos sistemas materiais: TMB
 				</section>
 			</section>
 
 			<section>
-				<section>
+				<section id="dsmtma">
 					Dinâmica dos sistemas materiais: TMA
 				</section>
 			</section>
@@ -732,19 +733,19 @@
 					<h3>Functions</h3>
 
 					<pre><code data-trim>
-function [mean,stdev] = stat(x)
-            %STAT Interesting statistics.
-            n = length(x);
-            mean = sum(x) / n;
-            stdev = sqrt(sum((x - mean).^2)/n);
-        end
-</code></pre>
-					<pre class='fragment'><code data-trim>
-A=rand(10,1);
-[meanA,stdA]=stat(A); %both outputs
-meanA=stat(A); %1st output only
-[~,stdA]=star(A); %2nd output only
-</code></pre>
+						function [mean,stdev] = stat(x)
+									%STAT Interesting statistics.
+									n = length(x);
+									mean = sum(x) / n;
+									stdev = sqrt(sum((x - mean).^2)/n);
+								end
+					</code></pre>
+										<pre class='fragment'><code data-trim>
+					A=rand(10,1);
+					[meanA,stdA]=stat(A); %both outputs
+					meanA=stat(A); %1st output only
+					[~,stdA]=star(A); %2nd output only
+					</code></pre>
 				</section>
 
 			</section>
