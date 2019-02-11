@@ -4644,7 +4644,7 @@
 			target = target.parentNode;
 		}
 
-		return true;
+		return false;
 
 	}
 
