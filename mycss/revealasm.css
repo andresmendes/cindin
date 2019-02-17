@@ -1534,7 +1534,7 @@ body {
   .reveal .speaker-notes:focus {
     outline: none; }
   .reveal .speaker-notes:before {
-    content: 'Speaker notes';
+    content: 'Anotações';
     display: block;
     margin-bottom: 10px;
     opacity: 0.5; }
