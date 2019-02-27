@@ -81,9 +81,9 @@
 
 a.button1{
 display:inline-block;
-padding:5px 15px;
+padding:10px 15px;
 border:5px solid rgb(11, 47, 77);
-margin:0 0.3em 0.3em 0;
+margin:0 0.3em 0.05em 0;
 box-sizing: border-box;
 text-decoration:none;
 font-family:'Roboto',sans-serif;
@@ -95,9 +95,9 @@ transition: all 0.15s;
 }
 a.button1:hover{
 display:inline-block;
-padding:5px 15px;
+padding:10px 15px;
 border:5px solid rgb(63, 109, 112);
-margin:0 0.3em 0.3em 0;
+margin:0 0.3em 0.05em 0;
 box-sizing: border-box;
 text-decoration:none;
 font-family:'Roboto',sans-serif;
@@ -227,4 +227,37 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+/*********************************************
+ * TABLE
+ *********************************************/
+
+ table.tabela1 {
+  /* margin: auto; */
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+table.tabela1 th {
+  font-weight: bold; }
+
+table.tabela1 th{
+  text-align: center;
+  border-bottom: 3px solid; 
+}
+table.tabela1 td {
+  text-align: center;
+  border-bottom: 2px solid;
+  border-top: 2px solid;
+  border-left: 2px solid;
+  border-right: 2px solid; }
+  
+   
+table.tabela1 tr:last-child{
+border-bottom: 2px solid;
+}
+
+table.tabela1 tbody th:first-child ,
+table.tabela1 tbody td:first-child {
+  text-align: left;
 }
