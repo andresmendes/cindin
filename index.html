@@ -79,31 +79,34 @@
 
 <body>
 
-	<div id="mySidenav" class="sidenav">
-
-		<div style="width:100%;height:60px">
-			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-		</div>
-
-		<div style="width:100%;margin-bottom: 60px">
-			<a href="#/inicial">Página principal</a>
-			<a href="#/intro">0 - Introdução: Cinemática e dinâmica</a>
-			<a href="#/cinpontomovret">1 - Cinemática do ponto: Movimento retilíneo</a>
-			<a href="#/cinpontomovgeral">2 - Cinemática do ponto: Movimento geral</a>
-			<a href="#/cincorpomovgeral">3 - Cinemática do corpo rígido: Movimento geral</a>
-			<a href="#/cincorpomovplano">4 - Cinemática do corpo rígido: Movimento plano</a>
-			<a href="#/compmov">5 - Composição de movimentos: Velocidade e aceleração</a>
-			<a href="#/dpmleis">6 - Dinâmica do ponto material: Leis fundamentais</a>
-			<a href="#/dpmteoremas">7 - Dinâmica do ponto material: Teoremas gerais</a>
-			<a href="#/dsmtmb">8 - Dinâmica dos sistemas materiais: TMB</a>
-			<a href="#/dsmtma">9 - Dinâmica dos sistemas materiais: TMA</a>
-			<a href="#/dinsol">10 - Dinâmica dos sólidos</a>
-		</div>
-
-	</div>
-
 	<!-- Para pinch zoom no celular, é preciso insterir este "data-prevent-swipe" para evitar conflito. -->
 	<div class="reveal" onclick="closeNav()" data-prevent-swipe>
+
+		<div id="mySidenav" class="sidenav">
+
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+			<p style="padding: 0px 0px 0px 16px;">Tópicos</p>
+
+			<div style="padding-left: 32px;">
+			<a href="#/inicial">Página principal</a><br>
+			<a href="#/intro">0 - Introdução: Cinemática e dinâmica</a><br>
+			<a href="#/cinpontomovret">1 - Cinemática do ponto: Movimento retilíneo</a><br>
+			<a href="#/cinpontomovgeral">2 - Cinemática do ponto: Movimento geral</a><br>
+			<a href="#/cincorpomovgeral">3 - Cinemática do corpo rígido: Movimento geral</a><br>
+			<a href="#/cincorpomovplano">4 - Cinemática do corpo rígido: Movimento plano</a><br>
+			<a href="#/compmov">5 - Composição de movimentos: Velocidade e aceleração</a><br>
+			<a href="#/dpmleis">6 - Dinâmica do ponto material: Leis fundamentais</a><br>
+			<a href="#/dpmteoremas">7 - Dinâmica do ponto material: Teoremas gerais</a><br>
+			<a href="#/dsmtmb">8 - Dinâmica dos sistemas materiais: TMB</a><br>
+			<a href="#/dsmtma">9 - Dinâmica dos sistemas materiais: TMA</a><br>
+			<a href="#/dinsol">10 - Dinâmica dos sólidos</a>
+			</div>
+
+			<p>&nbsp;</p>	
+
+		</div>
+
 		<div class="slides">
 
 			<section>
@@ -381,9 +384,10 @@
 				<section data-state="cinpontomovretevento">
 					<div id="cinpontomovretmenu" w3-include-html="auxfiles/content.html"></div>
 
-<script>
-realceTopico("cinpontomovretmenu", "Cinemática do ponto: Movimento retilíneo");
-</script>
+<!-- 					<script>
+						realceTopico("cinpontomovretmenu", "Cinemática do ponto: Movimento retilíneo");
+					</script>
+ -->					
 				</section>
 
 				<section id="cinpontomovretteste">
@@ -2478,7 +2482,7 @@ realceTopico("cinpontomovretmenu", "Cinemática do ponto: Movimento retilíneo")
 
 				<section>
 					<iframe allowfullscreen=""
-						data-src="https://www.youtube.com/embed/WBkgs4u5tW0?start=85;end=166;cc_load_policy=1;autoplay=1"
+						data-src="https://www.youtube.com/embed/mhIOylZMg6Q?start=115;cc_load_policy=1;autoplay=1"
 						width="100%" height="700px" frameborder="0"></iframe>
 				</section>
 
@@ -2515,13 +2519,10 @@ realceTopico("cinpontomovretmenu", "Cinemática do ponto: Movimento retilíneo")
 					</div>
 
 					<div style="width:50%; float: right">
-						<p style="font-size:30px">\(\vec{Q} = m \vec{v}\)</p>
-						<p style="font-size:30px">\( \frac{d \vec{Q}}{dt} = \frac{d m}{ dt} \vec{v} + m \frac{ d
-							\vec{v}}{dt} = m
-							\vec{a}\)</p>
-						<p style="font-size:30px">Pela segunda lei de Newton:</p>
-						<div
-							style="background-color:rgb(168, 188, 253); padding:10px; margin:auto; display:inline-block; align-content: center;">
+						<p class="fragment fade-in" data-fragment-index="1" style="font-size:30px">\(\vec{Q} = m \vec{v}\)</p>
+						<p class="fragment fade-in" data-fragment-index="2" style="font-size:30px">\( \frac{d \vec{Q}}{dt} = \frac{d m}{ dt} \vec{v} + m \frac{ d \vec{v}}{dt} = m \vec{a}\)</p>
+						<p class="fragment fade-in" data-fragment-index="3" style="font-size:30px">Pela segunda lei de Newton:</p>
+						<div class="fragment fade-in" data-fragment-index="4" style="background-color:rgb(168, 188, 253); padding:10px; margin:auto; display:inline-block; align-content: center;">
 							<p style="font-size: 30px;">\( \dot{\vec{Q}} = \vec{F}_{RES} \)</p>
 						</div>
 					</div>
@@ -2538,21 +2539,18 @@ realceTopico("cinpontomovretmenu", "Cinemática do ponto: Movimento retilíneo")
 						força depende do
 						caminho percorrido pelo ponto material.</p>
 
-
 					<div style="width:50%; float: left">
 						<img style="width:100%" src="ilustracoes/dpmteoremasPonto.svg" alt="Ponto">
 					</div>
 
 					<div style="width:50%; float: right">
-						<p style="font-size:25px">\[W(t_0,t_f) = \int_{\vec{r}(t_0)}^\vec{r}(t_f) \vec{F} \cdot d
+						<p class="fragment fade-in" data-fragment-index="1" style="font-size:25px">\[W(t_0,t_f) = \int_{\vec{r}(t_0)}^{\vec{r}(t_f)} \vec{F} \cdot d
 							\vec{r}\]</p>
-						<div
-							style="background-color:rgb(168, 188, 253); padding:10px; margin:auto; display:inline-block; align-content: center;">
-							<p style="font-size:25px">\[W(t_0,t_f) = \int_{\vec{r}(t_0)}^{\vec{r}(t_f)} \vec{F} \cdot
+						<div class="fragment fade-in" data-fragment-index="2" style="background-color:rgb(168, 188, 253); padding:10px; margin:auto; display:inline-block; align-content: center;">
+							<p style="font-size:25px">\[W(t_0,t_f) = \int_{(t_0)}^{(t_f)} \vec{F} \cdot
 								\vec{v} \, dt\]</p>
 						</div>
-						<div
-							style="background-color:rgb(168, 188, 253); padding:10px; margin:auto;margin-top: 10px; display:inline-block; align-content: center;">
+						<div class="fragment fade-in" data-fragment-index="3" style="background-color:rgb(168, 188, 253); padding:10px; margin:auto;margin-top: 10px; display:inline-block; align-content: center;">
 							<p style="font-size:25px">\(P = \vec{F} \cdot \vec{v}\)</p>
 						</div>
 					</div>
@@ -2572,35 +2570,32 @@ realceTopico("cinpontomovretmenu", "Cinemática do ponto: Movimento retilíneo")
 
 					<div style="width:50%; float:left">
 						<p style="font-size:25px;">\(m \vec{a} = \vec{F} \rightarrow m \dot{\vec{v}} = \vec{F}\)</p>
-						<p style="font-size:25px;">\(m \dot{\vec{v}} \cdot \vec{v} = \vec{F} \cdot \vec{v}\)</p>
-						<p style="font-size:25px;">\(m \dot{v} v = \vec{F} \cdot \vec{v} \rightarrow m \frac{dv}{dt} v =
+						<p class="fragment fade-in" data-fragment-index="1" style="font-size:25px;">\(m \dot{\vec{v}} \cdot \vec{v} = \vec{F} \cdot \vec{v}\)</p>
+						<p class="fragment fade-in" data-fragment-index="2" style="font-size:25px;">\(m \dot{v} v = \vec{F} \cdot \vec{v} \rightarrow m \frac{dv}{dt} v =
 							\vec{F} \cdot
 							\vec{v}\)</p>
-						<p style="font-size:25px;">\(m v \, dv = \vec{F} \cdot \vec{v} \, dt\)</p>
-						<p style="font-size:25px;">\[ \int_{v(t_0)}^{v(t_f)} m v \, dv = \int_{t_0}^{t_f} \vec{F} \cdot
+						<p class="fragment fade-in" data-fragment-index="3" style="font-size:25px;">\(m v \, dv = \vec{F} \cdot \vec{v} \, dt\)</p>
+						<p class="fragment fade-in" data-fragment-index="4" style="font-size:25px;">\[ \int_{v(t_0)}^{v(t_f)} m v \, dv = \int_{t_0}^{t_f} \vec{F} \cdot
 							\vec{v} \, dt\]</p>
 					</div>
 
 					<div style="width:50%; float:left">
-						<p style="font-size:25px;">\( \frac{m v(t_f)^2}{2} - \frac{m v(t_0)^2}{2} = W(t_0,t_f) \)</p>
-						<p style="font-size:25px;">Se: \(T = \frac{m v^2}{2}\) (Energia cinética)</p>
+						<p class="fragment fade-in" data-fragment-index="5" style="font-size:25px;">\( \frac{m v(t_f)^2}{2} - \frac{m v(t_0)^2}{2} = W(t_0,t_f) \)</p>
+						<p class="fragment fade-in" data-fragment-index="6" style="font-size:25px;">Se: \(T = \frac{m v^2}{2}\) (Energia cinética)</p>
 
-						<p style="font-size:25px;">Teorema da energia cinética</p>
+						<p class="fragment fade-in" data-fragment-index="7" style="font-size:25px;">Teorema da energia cinética</p>
 
-						<div
-							style="background-color:rgb(168, 188, 253); padding:10px; margin:auto; display:inline-block; align-content: center;">
+						<div class="fragment fade-in" data-fragment-index="7" style="background-color:rgb(168, 188, 253); padding:10px; margin:auto; display:inline-block; align-content: center;">
 							<p style="font-size:25px">\( T(f_f) - T(t_0) = W(t_0,t_f) \)</p>
 						</div>
 					</div>
 
-				</section>
-
-				<section>
-
-					<p style="font-size:25px;">\(\dot{\vec{v}} = \vec{a} = \dot{v} \vec{t} + \frac{v^2}{\rho} \vec{n} \)
-					</p>
-					<p style="font-size:25px;">\(\vec{v} = v \vec{t}\)</p>
-					<p style="font-size:25px;">\(\dot{\vec{v}} \cdot \vec{v} = \dot{v} \, v \)</p>
+					<aside class="notes">
+						<p style="font-size:25px;">Lembrando:</p>
+						<p style="font-size:25px;">\(\dot{\vec{v}} = \vec{a} = \dot{v} \vec{t} + \frac{v^2}{\rho} \vec{n} \)</p>
+						<p style="font-size:25px;">\(\vec{v} = v \vec{t}\)</p>
+						<p style="font-size:25px;">\(\dot{\vec{v}} \cdot \vec{v} = \dot{v} \, v \)</p>
+					</aside>
 
 				</section>
 
@@ -2616,15 +2611,14 @@ realceTopico("cinpontomovretmenu", "Cinemática do ponto: Movimento retilíneo")
 						=
 						U(\vec{r}(t_f)) - U(\vec{r}(t_0)) \]</p>
 
-					<p style="font-size:25px;">Definindo: \( V = - U \) (Energia potencial)</p>
+					<p class="fragment fade-in" data-fragment-index="1" style="font-size:25px;">Definindo: \( V = - U \) (Energia potencial)</p>
 
-					<p style="font-size:25px;">\(T(tf) - T(t_0) = V(t_0) - V(t_f)\)</p>
+					<p class="fragment fade-in" data-fragment-index="2" style="font-size:25px;">\(T(tf) - T(t_0) = V(t_0) - V(t_f)\)</p>
 
-					<p style="font-size:25px;">Definindo: \( E_m = T + V \) (Energia mecânica)</p>
+					<p class="fragment fade-in" data-fragment-index="3" style="font-size:25px;">Definindo: \( E_m = T + V \) (Energia mecânica)</p>
 
-					<p style="font-size:25px;">Para um ponto material sujeito apenas à forças conservativas: </p>
-					<div
-						style="background-color:rgb(168, 188, 253); padding:10px; margin:auto; display:inline-block; align-content: center;">
+					<p class="fragment fade-in" data-fragment-index="4" style="font-size:25px;">Para um ponto material sujeito apenas à forças conservativas: </p>
+					<div class="fragment fade-in" data-fragment-index="4" style="background-color:rgb(168, 188, 253); padding:10px; margin:auto; display:inline-block; align-content: center;">
 						<p style="font-size:25px">\(\Delta E_m = 0\)</p>
 					</div>
 
@@ -2638,11 +2632,10 @@ realceTopico("cinpontomovretmenu", "Cinemática do ponto: Movimento retilíneo")
 
 						<img style="width:100%" src="ilustracoes/dpmteoremasPeso.svg" alt="Peso">
 
-						<p style="font-size:25px;">Energia potencial gravitacional:</p>
+						<p class="fragment fade-in" data-fragment-index="6" style="font-size:25px;">Energia potencial gravitacional:</p>
 
 
-						<div
-							style="background-color:rgb(168, 188, 253); padding:10px; margin:auto; display:inline-block; align-content: center;">
+						<div class="fragment fade-in" data-fragment-index="6" style="background-color:rgb(168, 188, 253); padding:10px; margin:auto; display:inline-block; align-content: center;">
 							<p style="font-size:25px;">\( V = -U = m g z \)</p>
 						</div>
 
@@ -2653,18 +2646,18 @@ realceTopico("cinpontomovretmenu", "Cinemática do ponto: Movimento retilíneo")
 
 						<p style="font-size:25px;">\( \vec{F} = - m g \vec{k} \)</p>
 						<p style="font-size:25px;">\( \vec{r} = x \vec{i} + y \vec{j} + z \vec{k} \)</p>
-						<p style="font-size:25px;">\[ W = \int_{\vec{r}(t_0)}^{\vec{r}(t_f)} \vec{F} \cdot d \vec{r} =
+						<p class="fragment fade-in" data-fragment-index="1" style="font-size:25px;">\[ W = \int_{\vec{r}(t_0)}^{\vec{r}(t_f)} \vec{F} \cdot d \vec{r} =
 							\int_{\vec{r}(t_0)}^{\vec{r}(t_f)} - m g \vec{k} \cdot d \vec{r} \]</p>
 
-						<p style="font-size:25px;">\( d\vec{r} = dx \vec{i} + dy \vec{j} + dz \vec{k} \)</p>
+						<p class="fragment fade-in" data-fragment-index="2" style="font-size:25px;">\( d\vec{r} = dx \vec{i} + dy \vec{j} + dz \vec{k} \)</p>
 
-						<p style="font-size:25px;">\[ W = \int_{\vec{r}(t_0)}^{\vec{r}(t_f)} - m g \vec{k} \cdot \left(
+						<p class="fragment fade-in" data-fragment-index="3" style="font-size:25px;">\[ W = \int_{\vec{r}(t_0)}^{\vec{r}(t_f)} - m g \vec{k} \cdot \left(
 							dx \vec{i} + dy
 							\vec{j} + dz \vec{k} \right) \]</p>
 
-						<p style="font-size:25px;">\[ W = \int_{z_0}^{z_f} - m g dz = - m g z_f + m g z_0 \]</p>
+						<p class="fragment fade-in" data-fragment-index="4" style="font-size:25px;">\[ W = \int_{z_0}^{z_f} - m g dz = - m g z_f + m g z_0 \]</p>
 
-						<p style="font-size:25px;">\( U = - m g z \)</p>
+						<p class="fragment fade-in" data-fragment-index="5" style="font-size:25px;">\( U = - m g z \)</p>
 
 
 					</div>
@@ -3259,7 +3252,7 @@ realceTopico("cinpontomovretmenu", "Cinemática do ponto: Movimento retilíneo")
 			defaultTiming: 120,
 
 			// Enable slide navigation via mouse wheel
-			mouseWheel: true,
+			mouseWheel: false,
 
 			// Hides the address bar on mobile devices
 			hideAddressBar: true,
@@ -3372,13 +3365,16 @@ realceTopico("cinpontomovretmenu", "Cinemática do ponto: Movimento retilíneo")
 
 	<script>
 		function openNav() {
-			document.getElementById("mySidenav").style.width = "250px";
-			document.getElementById("main").style.marginLeft = "250px";
+			document.getElementById("mySidenav").style.width = "700px";
+			// document.getElementById("main").style.marginLeft = "250px";
 		}
 
 		function closeNav() {
-			document.getElementById("mySidenav").style.width = "0";
-			document.getElementById("main").style.marginLeft = "0";
+			var x = document.getElementById("mySidenav").style.width;
+			if (x == "700px") {
+				document.getElementById("mySidenav").style.width = "0";
+				// document.getElementById("main").style.marginLeft = "0";
+			}
 		}
 
 
