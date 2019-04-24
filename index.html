@@ -2486,25 +2486,6 @@
 						width="100%" height="700px" frameborder="0"></iframe>
 				</section>
 
-				<section id="dpmteoremasteste">
-
-					<img style="width:35%;" src="ilustracoes/dpmteoremasMola.svg" alt="Mola">
-
-					<p style="text-align: justify;"> A partir da força elástica, determine a energia potencial elástica
-						do sistema
-						ilustrado.</p>
-
-					<div style="width:100%; height:100px;">
-
-						<a href="https://moodle.fei.edu.br/moodle/mod/quiz/view.php?id=117205" target="_blank"
-							class="button2" style="float: left; margin: 10px; align-content: center;"
-							title="Mais exercícios">Quero
-							mais
-							exercícios!</a>
-					</div>
-
-				</section>
-
 				<section>
 
 					<h5>Quantidade de movimento</h5>
@@ -2514,17 +2495,47 @@
 						agem neste ponto.</p>
 
 
-					<div style="width:50%; float: left">
+					<div style="width:50%; height: 400px; float: left">
 						<img style="width:100%" src="ilustracoes/dpmteoremasPonto.svg" alt="Ponto">
 					</div>
 
-					<div style="width:50%; float: right">
+					<div style="width:50%; height: 400px; float: right">
 						<p class="fragment fade-in" data-fragment-index="1" style="font-size:30px">\(\vec{Q} = m \vec{v}\)</p>
 						<p class="fragment fade-in" data-fragment-index="2" style="font-size:30px">\( \frac{d \vec{Q}}{dt} = \frac{d m}{ dt} \vec{v} + m \frac{ d \vec{v}}{dt} = m \vec{a}\)</p>
 						<p class="fragment fade-in" data-fragment-index="3" style="font-size:30px">Pela segunda lei de Newton:</p>
 						<div class="fragment fade-in" data-fragment-index="4" style="background-color:rgb(168, 188, 253); padding:10px; margin:auto; display:inline-block; align-content: center;">
 							<p style="font-size: 30px;">\( \dot{\vec{Q}} = \vec{F}_{RES} \)</p>
 						</div>
+					</div>
+
+					<div class="fragment fade-in" data-fragment-index="5" style="width: 100%">
+						<p style="font-size: 30px;">Se forças externas forem nulas, a quantidade de movimento se conserva.</p>
+					</div>
+
+				</section>
+				
+				<section>
+
+					<h5>Momento angular</h5>
+
+					<p style="font-size:30px">A derivada do momento da quantidade de movimento (momento angular) do ponto \(P\) em relação a \(O\) é igual ao momento da força resultante em relação a \(O\).</p>
+
+
+					<div style="width:50%; height: 400px; float: left">
+						<img style="width:100%" src="ilustracoes/dpmteoremasPonto.svg" alt="Ponto">
+					</div>
+
+					<div style="width:50%; height: 400px; float: right">
+						<p class="fragment fade-in" data-fragment-index="1" style="font-size:30px">\(\vec{H}_O = \vec{r} \wedge m \vec{v}\)</p>
+						<p class="fragment fade-in" data-fragment-index="2" style="font-size:30px">\( \frac{d \vec{H}_O}{dt} = \vec{v} \wedge m \vec{v} + \vec{r} \wedge m \vec{a} \)</p>
+						<p class="fragment fade-in" data-fragment-index="3" style="font-size:30px">Pela segunda lei de Newton:</p>
+						<div class="fragment fade-in" data-fragment-index="4" style="background-color:rgb(168, 188, 253); padding:10px; margin:auto; display:inline-block; align-content: center;">
+							<p style="font-size: 30px;">\( \dot{\vec{H}_O} = \vec{M}_{O{,}RES} \)</p>
+						</div>
+					</div>
+					
+					<div class="fragment fade-in" data-fragment-index="5" style="width: 100%">
+						<p style="font-size: 30px;">Se os momentos externos forem nulos, o momento angular se conserva.</p>
 					</div>
 
 				</section>
@@ -2659,20 +2670,31 @@
 
 						<p class="fragment fade-in" data-fragment-index="5" style="font-size:25px;">\( U = - m g z \)</p>
 
-
 					</div>
 
 				</section>
 
 				<section>
 
-					<a href="#dpmteoremasteste" class="button2" style="margin: 10px; align-content: center;"
-						title="Mais exercícios">Voltar
-						para o exercício</a>
+					<img style="width:35%;" src="ilustracoes/dpmteoremasMola.svg" alt="Mola">
 
-					<a href="#dsmtmb" class="button2" style="margin: 10px; align-content: center;"
-						title="Dúvidas">Próximo
-						tópico</a>
+					<p style="text-align: justify;"> A partir da força elástica, determine a energia potencial elástica
+						do sistema
+						ilustrado.</p>
+
+				</section>
+
+
+				<section>
+
+					<p style="font-size: 30px; text-align: justify;">Considere uma esfera de 0,600 kg presa a um elástico de constante \(k\)=100 N/m que está relaxado quando a esfera está na origem \(O\). A esfera pode deslizar sem atrito sobre a superfícia horizontal. Na posição mostrada na figura, a velocidade de \(v_A\)=20,0 m/s. Determine:</p>
+
+					<ol style="font-size: 30px">
+						<li>As distâncias máxima e mínima em relação à origem</li>
+						<li>e as correspondentes velocidades.</li>
+					</ol>
+					
+					<img style="height: 400px;" src="ilustracoes/dpmteoremasExemplo.svg">
 
 				</section>
 
@@ -3372,7 +3394,7 @@
 		function closeNav() {
 			var x = document.getElementById("mySidenav").style.width;
 			if (x == "700px") {
-				document.getElementById("mySidenav").style.width = 0;
+				document.getElementById("mySidenav").style.width = "0";
 				// document.getElementById("main").style.marginLeft = "0";
 			}
 		}
