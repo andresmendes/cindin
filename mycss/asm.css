@@ -31,6 +31,7 @@
 .sidenav {
   height: 100%;
   width: 0;
+  max-width: 100%;
   position: fixed;
   z-index: 2;
   top: 0;
@@ -71,10 +72,11 @@
   padding: 16px;
 }*/
 
-/* @media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-} */
+/*Se a tela for menor do que a largura que eu especifiquei no index, faz-se o wrap do texto. 
+O valor do max width abaixo deve ser igual ao valor escolhido no index*/
+ @media screen and (max-width: 700px) {
+  .sidenav {white-space:normal;}
+} 
 
 
 /*********************************************
