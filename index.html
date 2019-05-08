@@ -2704,23 +2704,8 @@
 
 				<section id="dsmtmb">
 
-					<div style="width:100%; height: 700px;">
-						<div style="width:100%;position:absolute;top:250px;text-align: center;">
-
-							<h3>Dinâmica dos sistemas materiais</h3>
-							<h5>TMB</h5>
-
-						</div>
-						<div style="width:100%;position:absolute; bottom:30px;">
-
-							<a href="https://moodle.fei.edu.br/moodle/course/view.php?id=2620&section=12"
-								target="_blank" class="button2"
-								style="float: left; margin: 10px; align-content: center;bottom: 10 px"
-								title="Estudo recomendado" target="_blank">Estudo
-								recomendado</a>
-
-						</div>
-					</div>
+					<h3>Dinâmica dos sistemas materiais</h3>
+					<h5>TMB</h5>
 
 				</section>
 
@@ -2733,31 +2718,6 @@
 					<iframe allowfullscreen=""
 						data-src="https://www.youtube.com/embed/uFGs6hieZg4?cc_load_policy=1;autoplay=1" width="100%"
 						height="700px" frameborder="0"></iframe>
-				</section>
-
-
-				<section id="dsmtmbteste">
-
-
-					<img style="width:55%;" src="ilustracoes/dsmtmbBarco.svg" alt="Barco">
-
-					<p style="text-align: justify; font-size: 25px; margin-right: 30px">Considere um barco de massa
-						\(M\) e
-						comprimento \(L\). Uma pessoa de massa \(m\) se encontra inicialmente (\(t = t_0\)) na popa do
-						barco. O sistema
-						está inicialmente em repouso. Se a pessoa deslocar-se da popa para a proa do barco, qual será o
-						deslocamento do
-						barco? Considerar o atrito entre a água e o barco desprezível.</p>
-
-
-					<div style="width:100%; height:100px;">
-
-						<a href="https://moodle.fei.edu.br/moodle/mod/quiz/view.php?id=117212" target="_blank"
-							class="button2" style="float: left; margin: 10px; align-content: center;"
-							title="Mais exercícios">Quero
-							mais
-							exercícios!</a>
-					</div>
 
 				</section>
 
@@ -2765,73 +2725,85 @@
 
 					<div style="width:100%;">
 
-						<h5>Teorema do movimento do baricentro (TMB)</h5>
-
+						<h5>Movimento do baricentro</h5>
 
 					</div>
+
 					<div style="width:65%; float:left; display:flex; align-items: center;">
 
-						<p style="font-size: 25px">O baricentro \(G\) de qualquer sistema material move-se como se fosse
-							um ponto
-							material, de massa igual a \(m\), sujeito à resultante de forças externas ao sistema.</p>
+						<p style="font-size: 25px; text-align: justify; padding-right: 20px;">O baricentro \(G\) de qualquer sistema material move-se como se fosse um ponto material, de massa igual a \(m\), sujeito à resultante de forças externas ao sistema.</p>
 					</div>
 					<div style="width:35%; float:right; display:flex; align-items: center;">
-						<div
-							style="height:140px; background-color:rgb(168, 188, 253); float: right; margin-right:10px; padding:10px; display:flex; align-items:center;">
+						<div style="height:140px; background-color:rgb(168, 188, 253); float: right; margin-right:10px; padding:10px; display:flex; align-items:center;">
 							<p style="font-size: 25px">\[ m \vec{a}_G = \sum_{i=1}^N \vec{F}_{i,EXT} \] </p>
 						</div>
 
 					</div>
-					<div style="width:45%; height:400px;float:left; display:flex; align-items: center;">
+					<div style="width:55%; height:400px;float:left; display:flex; align-items: center;">
 						<img style="width:100%" src="ilustracoes/dsmtmbSistema.svg" alt="Sistema TMB">
 					</div>
 
-					<div style="width:55%; height:400px;float:right;">
+					<div style="width:45%; height:400px;float:right;">
 
-						<p style="font-size: 25px">\[ \vec{F}_i = \vec{F}_{i,EXT} + \sum_{j=1}^N \vec{f}_{i,j}\]</p>
+						<p class="fragment fade-in" data-fragment-index="1" style="font-size: 25px">\[ \vec{F}_i = \vec{F}_{i,EXT} + \sum_{j=1}^N \vec{f}_{i,j}\]</p>
 						<!-- <p style="font-size: 25px">Segunda lei de Newton para a partícula:</p> -->
-						<p style="font-size: 25px">\[ m_i \vec{a}_i = \vec{F}_i =\vec{F}_{i,EXT} + \sum_{j=1}^N
+						<p class="fragment fade-in" data-fragment-index="2" style="font-size: 25px">\[ m_i \vec{a}_i = \vec{F}_i =\vec{F}_{i,EXT} + \sum_{j=1}^N
 							\vec{f}_{i,j}\]</p>
 						<!-- <p style="font-size: 25px">Somando todos os pontos do sistema:</p> -->
-						<p style="font-size: 25px">\[ \sum_{i=1}^N m_i \vec{a}_i = \sum_{i=1}^N \vec{F}_i = \sum_{i=1}^N
-							\vec{F}_{i,EXT}
-							+ \sum_{i=1}^N \sum_{j=1}^N \vec{f}_{i,j}\]</p>
+						<p class="fragment fade-in" data-fragment-index="3" style="font-size: 25px">\[ \sum_{i=1}^N m_i \vec{a}_i = \sum_{i=1}^N \vec{F}_i \]</p>
+						<p class="fragment fade-in" data-fragment-index="4" style="font-size: 25px">
+						\[\sum_{i=1}^N m_i \vec{a}_i = \sum_{i=1}^N \vec{F}_{i,EXT} + \sum_{i=1}^N \sum_{j=1}^N \vec{f}_{i,j}\]</p>
 
 					</div>
 
 				</section>
 
 				<section>
+
+					<h5>Ação das forças internas</h5>
 
 					<p style="font-size: 25px">\[ \sum_{i=1}^N m_i \vec{a}_i = \sum_{i=1}^N \vec{F}_i = \sum_{i=1}^N
 						\vec{F}_{i,EXT}
 						+ \sum_{i=1}^N \sum_{j=1}^N \vec{f}_{i,j}\]</p>
 
-					<p style="font-size: 25px">Como as forças internas aparecem sempre aos pares de mesma magnitude e
+					<p class="fragment fade-in" data-fragment-index="1" style="font-size: 25px; text-align: justify;">Como as forças internas aparecem sempre aos pares de mesma magnitude e
 						sentidos
 						opostos:</p>
-					<p style="font-size: 25px">\[ \sum_{i=1}^N \sum_{j=1}^N \vec{f}_{i,j} = \underbrace{\vec{f}_{1,2} +
+					<p class="fragment fade-in" data-fragment-index="1" style="font-size: 25px">\[ \sum_{i=1}^N \sum_{j=1}^N \vec{f}_{i,j} = \underbrace{\vec{f}_{1,2} +
 						\vec{f}_{2,1}}_{\vec{f}_{1,2} - \vec{f}_{1,2} = \vec{0}} + \dots + \underbrace{\vec{f}_{1,i} +
 						\vec{f}_{i,1}}_{\vec{0}} + \dots = 0\]</p>
-					<p style="font-size: 25px">\[ \sum_{i=1}^N m_i \vec{a}_i = \sum_{i=1}^N \vec{F}_{i,EXT}\]</p>
+
+					<div class="fragment fade-in" data-fragment-index="1" style="width:55%; height:270px;float:left; display:flex; align-items: center;">
+						<img style="height:270px" src="ilustracoes/dsmtmbSistema.svg" alt="Sistema TMB">
+					</div>
+
+					<div style="width:45%; height:270px;float:right;">
+
+						<p class="fragment fade-in" data-fragment-index="2" style="font-size: 25px">\[ \sum_{i=1}^N m_i \vec{a}_i = \sum_{i=1}^N \vec{F}_{i,EXT}\]</p>
+
+					</div>
+
+
+
 
 				</section>
 
 				<section>
+
+					<h5>Baricentro</h5>
+
 					<p style="font-size: 25px">\[ \sum_{i=1}^N m_i \vec{a}_i = \sum_{i=1}^N \vec{F}_{i,EXT}\]</p>
-					<p style="font-size: 25px">Definição de baricentro:</p>
-					<p style="font-size: 25px">\[ \sum m_i (P_i - G) = 0 \rightarrow G = \frac{1}{\sum m_i} \sum (m_i
+					<p  class="fragment fade-in" data-fragment-index="1" style="font-size: 25px; text-align: justify;">Definição de baricentro:</p>
+					<p  class="fragment fade-in" data-fragment-index="1" style="font-size: 25px">\[ \sum m_i (P_i - G) = 0 \qquad \rightarrow \qquad G = \frac{1}{\sum m_i} \sum (m_i
 						P_i) \]</p>
-					<p style="font-size: 25px">\[ \sum m_i (\vec{a}_i - \vec{a}_G) = 0 \]</p>
-					<p style="font-size: 25px">\[ \sum m_i (\vec{a}_i = \sum m_i \vec{a}_G) \]</p>
+					<p class="fragment fade-in" data-fragment-index="2" style="font-size: 25px">\[ \sum m_i (\vec{a}_i - \vec{a}_G) = 0 \]</p>
+					<p class="fragment fade-in" data-fragment-index="3" style="font-size: 25px">\[ \sum m_i \vec{a}_i = \sum m_i \vec{a}_G \]</p>
 
 
-					<div
-						style="height:140px; float: left; margin-right:10px; padding:10px; display:flex; align-items:center;">
-						<p style="font-size: 25px">Teorema do movimento do baricentro (TMB)</p>
+					<div class="fragment fade-in" data-fragment-index="4" style="height:140px; float: left; margin-right:10px; padding:10px; display:flex; align-items:center;">
+						<p style="font-size: 30px">Teorema do movimento do baricentro (TMB)</p>
 					</div>
-					<div
-						style="height:140px; background-color:rgb(168, 188, 253); float: right; margin-right:10px; padding:10px; display:flex; align-items:center;">
+					<div class="fragment fade-in" data-fragment-index="4" style="height:140px; background-color:rgb(168, 188, 253); float: right; margin-right:10px; padding:10px; display:flex; align-items:center;">
 						<p style="font-size: 25px">\[ m \vec{a}_G = \sum_{i=1}^N \vec{F}_{i,EXT} \] </p>
 					</div>
 
@@ -2839,13 +2811,18 @@
 
 				<section>
 
-					<a href="#dsmtmbteste" class="button2" style="margin: 10px; align-content: center;"
-						title="Mais exercícios">Voltar
-						para o exercício</a>
 
-					<a href="#dsmtma" class="button2" style="margin: 10px; align-content: center;"
-						title="Dúvidas">Próximo
-						tópico</a>
+					<img style="width:60%;" src="ilustracoes/dsmtmbBarco.svg" alt="Barco">
+
+					<p style="text-align: justify; font-size: 35">Considere um barco de massa \(M\) e comprimento \(L\). Uma pessoa de massa \(m\) se encontra inicialmente (\(t = t_0\)) na popa do barco. O sistema está inicialmente em repouso. Se a pessoa deslocar-se da popa para a proa do barco, qual será o deslocamento do barco? Considerar o atrito entre a água e o barco desprezível.</p>
+
+				</section>
+
+				<section>
+					
+					<img style="width:65%;" src="ilustracoes/dsmtmbBalaCarro.svg" alt="Bala-carro">
+
+					<p style="text-align: justify;">Uma bala de 30 g possui velocidade horizontal de 450 m/s e colide com um bloco de 3 kg em repouso. Supondo que não houve dissipação de energia, determine a velocidade do conjunto após o impacto. Despreze a massa do carrinho.</p>
 
 				</section>
 
