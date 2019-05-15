@@ -2832,71 +2832,167 @@
 
 				<section id="dsmtma">
 
-					<div style="width:100%; height: 700px;">
-						<div style="width:100%;position:absolute;top:250px;text-align: center;">
-
-							<h3>Dinâmica dos sistemas materiais</h3>
-							<h5>TMA</h5>
-
-						</div>
-						<div style="width:100%;position:absolute; bottom:30px;">
-
-							<a href="https://moodle.fei.edu.br/moodle/course/view.php?id=2620&section=13"
-								target="_blank" class="button2"
-								style="float: left; margin: 10px; align-content: center;bottom: 10 px"
-								title="Estudo recomendado" target="_blank">Estudo
-								recomendado</a>
-
-						</div>
-					</div>
+					<h3>Dinâmica dos sistemas materiais</h3>
+					<h5>TMA</h5>
 
 				</section>
 
 				<section data-state="dsmtmaevento">
 						<div id="dsmtmamenu" w3-include-html="auxfiles/content.html"></div>
-					</section>
+				</section>
 
 				<section>
 
-					<iframe allowfullscreen=""
-						data-src="https://www.youtube.com/embed/YJuCiDjQB6M?start=40;end=105;cc_load_policy=1;autoplay=1"
-						width="100%" height="700px" frameborder="0"></iframe>
-				</section>
-
-
-				<section id="dsmtmateste">
-
-					<div style="width:100%;">
-
-						<img style="width:55%;" src="ilustracoes/dsmtmaDisco.svg" alt="TMA Disco">
-
-						<p style="text-align: justify; font-size: 25px; margin-right: 30px">Um disco homogêneo de raio
-							\(R\), massa \(m\) e momento de inércia \(J_Q = mR^2/2\) é puxado pelo ponto \(Q\) com a
-							aplicação de uma força \(F\) e rola sem escorregar. Determine o diagrama de corpo livre e a
-							equação de movimento do sistema.</p>
-
-					</div>
-
-					<div style="width:100%; height:100px;">
-
-						<a href="https://moodle.fei.edu.br/moodle/mod/quiz/view.php?id=117218" target="_blank"
-							class="button2" style="float: left; margin: 10px; align-content: center;"
-							title="Mais exercícios">Quero
-							mais
-							exercícios!</a>
-					</div>
+					<iframe allowfullscreen="" data-src="https://www.youtube.com/embed/YJuCiDjQB6M?start=40;end=105;cc_load_policy=1;autoplay=1" width="100%" height="700px" frameborder="0"></iframe>
 
 				</section>
 
 				<section>
 
-					<a href="#dsmtmateste" class="button2" style="margin: 10px; align-content: center;"
-						title="Mais exercícios">Voltar
-						para o exercício</a>
+					<h5>Quantidade de movimento angular</h5>
+					
+					<img style="height: 300px;" src="ilustracoes/dsmtmaSistema.svg" atl="TMA Sistema">
 
-					<a href="#dinsol" class="button2" style="margin: 10px; align-content: center;"
-						title="Dúvidas">Próximo
-						tópico</a>
+					<p style="font-size: 25px; text-align: justify;">Quantidade de movimento angular para uma partícula</p>
+
+					<p style="font-size: 25px;">\[\vec{K}_O = (P - O) \wedge m \vec{v}\]</p>
+
+					<p style="font-size: 25px; text-align: justify;">Quantidade de movimento angular para um sistema de partículas </p>
+
+					<p style="font-size: 25px;">\[\vec{K}_O = \sum_{i=1}^{N} (P_i - O) \wedge m_i \vec{v}_i\]</p>
+
+				</section>
+
+				<section>
+					
+					<p style="font-size: 25px;">\[\vec{K}_O = \sum_{i=1}^{N} (P_i - O) \wedge m_i \vec{v}_i\]</p>
+					
+					<p class="fragment fade-in" data-fragment-index="1" style="font-size: 25px;">\[\dot{\vec{K}}_O = \sum_{i=1}^{N} (\vec{v}_i - \vec{v}_O) \wedge m_i \vec{v}_i + \sum_{i=1}^{N} (P_i - O) \wedge m_i \vec{a}_i \]</p>
+					
+					<p class="fragment fade-in" data-fragment-index="2" style="font-size: 25px;">\[\dot{\vec{K}}_O = \sum_{i=1}^{N} (- \vec{v}_O) \wedge m_i \vec{v}_i + \sum_{i=1}^{N} (P_i - O) \wedge m_i \vec{a}_i \]</p>
+					
+					<p class="fragment fade-in" data-fragment-index="3" style="font-size: 25px;">\[\dot{\vec{K}}_O = \sum_{i=1}^{N} (m_i \vec{v}_i \wedge \vec{v}_O) + \sum_{i=1}^{N} (P_i - O) \wedge m_i \vec{a}_i \]</p>
+					
+					<p class="fragment fade-in" data-fragment-index="5" style="font-size: 25px;">\[\dot{\vec{K}}_O = m \vec{v}_G \wedge \vec{v}_O + \sum_{i=1}^{N} (P_i - O) \wedge \vec{F}_{i,EXT} + \sum_{i=1}^{N} (P_i - O) \wedge \sum_{j=1}^{N} \vec{f}_{ij} \] </p>
+
+					<div class="fragment fade-in" data-fragment-index="6" style="height:120px; background-color:rgb(168, 188, 253); float: left; margin-right:10px; padding:10px; display:flex; align-items:center;">
+						<p style="font-size: 25px">Teorema do momento angular (TMA): </p>
+						<p style="font-size: 25px">\[ \qquad \dot{\vec{K}}_O =  m \vec{v}_G \wedge \vec{v}_O + \vec{M}_O^{EXT} \] </p>
+					</div>
+
+					<aside class="notes">
+					<p>Definição de baricentro</p>
+					<p>\[ \sum_{i=1}^N m_i \vec{v}_i = \left(\sum_{i=1}^N m_i \right) \vec{v}_G \]</p>
+					
+
+					<p>Segunda Lei de Newton</p>
+					<p>\[ m_i \vec{a}_i = \vec{F}_{i,EXT} + \sum_{j=1}^N \vec{f}_{ij} \]</p>
+
+					</aside>
+
+				</section>
+
+				<section>
+					
+					<p style="font-size: 35px; text-align: justify;">Quantidade de movimento angular para um corpo rígido</p>
+
+					<p style="font-size: 25px;">\[\vec{K}_O = \sum_{i=1}^{N} (P_i - O) \wedge m_i \vec{v}_i\]</p>
+					
+					<p class="fragment fade-in" data-fragment-index="1" style="font-size: 25px;">\[\vec{K}_O = \sum_{i=1}^{N} (P_i - O) \wedge m_i \left( \vec{v}_O + \vec{\omega}\wedge(P_i - O) \right)\]</p>
+					
+					<p class="fragment fade-in" data-fragment-index="2" style="font-size: 25px;">\[ \vec{K}_O = \underbrace{\sum_{i=1}^{N} (P_i - O) m_i}_{\text{Def. de baricentro}} \wedge \vec{v}_O + \sum_{i=1}^{N} (P_i - O) \wedge \vec{\omega} \wedge (P_i - O) \]</p>
+					
+					<p class="fragment fade-in" data-fragment-index="3" style="font-size: 25px;">\[ \vec{K}_O = m (G - O) \wedge \vec{v}_O + \underbrace{\sum_{i=1}^{N} (P_i - O) \wedge \vec{\omega} \wedge (P_i - O)}_{\text{?}} \]</p>
+
+				</section>
+
+				<section>
+					
+					<p style="font-size: 35px; text-align: justify;">Quantidade de movimento angular para um corpo rígido</p>
+
+					<p style="font-size: 25px;">\[ \vec{K}_O = m (G - O) \wedge \vec{v}_O + \underbrace{\sum_{i=1}^{N} (P_i - O) \wedge \vec{\omega} \wedge (P_i - O)}_{\text{?}} \]</p>
+
+					<div class="fragment fade-in" data-fragment-index="1" style="height:120px; background-color:rgb(168, 188, 253); float: left; margin-right:10px; padding:10px; display:flex; align-items:center;">
+						<p style="font-size: 25px;">\[ \vec{K}_O = m (G - O) \wedge \vec{v}_O + \left[ \begin{array}{ccc} \vec{i} & \vec{j} & \vec{k} \end{array} \right] J_O \left[ \begin{array}{c} \omega_x \\ \omega_y \\ \omega_z \end{array} \right] \]</p>
+					</div>
+
+					<div class="fragment fade-in" data-fragment-index="2" style="width: 100%; float: left; padding-top: 50px;">
+						
+						<p style="font-size: 25px; text-align: justify;">Onde:</p>
+					
+					</div>
+
+					<p class="fragment fade-in" data-fragment-index="2" style="font-size: 25px;">\( J =  \left[ \begin{array}{ccc} \sum m_{i} ({y_{i}}^2+{z_{i}}^2) & - \sum m_{i}\,x_{i}\,y_{i} & - \sum m_{i}\,x_{i}\,z_{i}\\ - \sum m_{i}\,x_{i}\,y_{i} & \sum m_{i}({x_{i}}^2+{z_{i}}^2) & - \sum m_{i}\,y_{i}\,z_{i}\\ - \sum m_{i}\,x_{i}\,z_{i} & - \sum m_{i}\,y_{i}\,z_{i} & \sum m_{i}({x_{i}}^2+{y_{i}}^2) \end{array} \right] \)</p>
+
+				</section>
+
+				<section>
+					
+					<h5>TMA para um corpo rígido</h5>
+
+					<p style="font-size: 25px;">\[ \vec{K}_O = m (G - O) \wedge \vec{v}_O + \left[ \begin{array}{ccc} \vec{i} & \vec{j} & \vec{k} \end{array} \right] J_O \left[ \begin{array}{c} \omega_x \\ \omega_y \\ \omega_z \end{array} \right] \]</p>
+					
+					<p class="fragment fade-in" data-fragment-index="1" style="font-size: 25px;">\[ \dot{\vec{K}}_O = m (\vec{v}_G - \vec{v}_O) \wedge \vec{v}_O + m (G - O) \wedge \vec{a}_O + \frac{d}{dt} \left( \left[ \begin{array}{ccc} \vec{i} & \vec{j} & \vec{k} \end{array} \right] J_O \left[ \begin{array}{c} \omega_x \\ \omega_y \\ \omega_z \end{array} \right] \right) \]</p>
+
+					<div class="fragment fade-in" data-fragment-index="2" style="height:120px; background-color:rgb(168, 188, 253); float: left; margin-right:10px; padding:10px; display:flex; align-items:center;">
+						<p style="font-size: 25px;">\[ \dot{\vec{K}}_O = m (\vec{v}_G \wedge \vec{v}_O + m (G - O) \wedge \vec{a}_O + \frac{d}{dt} \left( \left[ \begin{array}{ccc} \vec{i} & \vec{j} & \vec{k} \end{array} \right] J_O \left[ \begin{array}{c} \omega_x \\ \omega_y \\ \omega_z \end{array} \right] \right) \]</p>
+					</div>
+
+				</section>
+
+				<section>
+					
+					<div style="float:left; width: 100%">
+						<p style="font-size: 30px; text-align: justify;">TMA</p>
+					</div>
+
+					<div style="height:120px; background-color:rgb(168, 188, 253); float: left; margin-right:10px; padding:10px; display:flex; align-items:center;">
+						<p style="font-size: 25px">\[ \dot{\vec{K}}_O =  m \vec{v}_G \wedge \vec{v}_O + \vec{M}_O^{EXT} \] </p>
+					</div>
+
+					<div class="fragment fade-in" data-fragment-index="1"  style="float:left; width: 100%">
+						<p style="font-size: 30px; text-align: justify;">TMA para um corpo rígido</p>
+					</div>
+
+					<div class="fragment fade-in" data-fragment-index="1" style="height:120px; background-color:rgb(168, 188, 253); float: left; margin-right:10px; padding:10px; display:flex; align-items:center;">
+						<p style="font-size: 25px">\[ \dot{\vec{K}}_O =  m \vec{v}_G \wedge \vec{v}_O + m(G-O)\vec{a}_O + \frac{d}{dt} \left( \left[ \begin{array}{ccc} \vec{i} & \vec{j} & \vec{k} \end{array} \right] J_O \left[ \begin{array}{c} \omega_x \\ \omega_y \\ \omega_z \end{array} \right] \right) \] </p>
+					</div>
+
+					<div class="fragment fade-in" data-fragment-index="2"  style="float:left; width: 100%">
+						<p style="font-size: 30px; text-align: justify;">TMA geral para um corpo rígido</p>
+					</div>
+
+					<div class="fragment fade-in" data-fragment-index="2" style="height:120px; background-color:rgb(168, 188, 253); float: left; margin-right:10px; padding:10px; display:flex; align-items:center;">
+						<p style="font-size: 25px">\[ m(G-O)\vec{a}_O + \frac{d}{dt} \left( \left[ \begin{array}{ccc} \vec{i} & \vec{j} & \vec{k} \end{array} \right] J_O \left[ \begin{array}{c} \omega_x \\ \omega_y \\ \omega_z \end{array} \right] \right) = \vec{M}_O^{EXT} \] </p>
+					</div>
+
+				</section>
+
+				<section>
+
+					<h5>Exemplo</h5>
+
+					<img style="width:55%;" src="ilustracoes/dsmtmaDisco.svg" alt="TMA Disco">
+
+					<p style="text-align: justify; font-size: 30px; margin-right: 30px">Um disco homogêneo de raio
+						\(R\), massa \(m\) e momento de inércia \(J_Q = mR^2/2\) é puxado pelo ponto \(Q\) com a
+						aplicação de uma força \(F\) e rola sem escorregar. Determine o diagrama de corpo livre e a
+						equação de movimento do sistema.</p>
+
+				</section>
+
+				<section>
+
+					<h5>Exercício</h5>
+
+					<p style="font-size: 30px; text-align: justify;">Considere o armário de massa \(m = 20\) kg apoiado sobre roletes que permitem o movimento horizontal sem atrito (\(\mu = 0\)). Para uma força \(F = 100\) N aplicada como ilustrado na figura abaixo, determine:</p>
+					
+					<ul style="font-size: 30px;">
+						<li>Aceleração do armário.</li>
+						<li>A faixa de valores de \(h\) para que o armário não tombe.</li>
+					</ul>
+
+					<img style="height: 350px;" src="ilustracoes/dsmtmaArmario.svg" alt="Armario">
 
 				</section>
 
