@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Notebook</title>
+
+	<!-- 
+	MathJax
+	Source: http://docs.mathjax.org/en/latest/start.html
+	-->
+	<script type="text/javascript" async
+  		src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+	</script>
+
+	<!-- 
+	Automatic equation numbering
+	Source: http://docs.mathjax.org/en/latest/tex.html#automatic-equation-numbering 
+	-->
+	<script type="text/x-mathjax-config">
+	MathJax.Hub.Config({
+		TeX: { equationNumbers: { autoNumber: "AMS" } }
+	});
+	</script>
+
+</head>
+<body>
+
+
+<h5>Deslocamento em planos paralelos</h5>
+<p>Todas as partículas do sólido deslocam-se em planos paralelos a um determinado plano \(\alpha\).</p>
+<p>Se \(\vec{k}\) é normal ao plano \(\alpha\):</p>
+<p>\( \vec{v}_B = \vec{v}_A + \omega \vec{k} \wedge (B - A) \)</p>
+<p>\( \vec{a}_B = \vec{a}_A + \dot{\omega} \vec{k} \wedge (B - A) + \omega \vec{k} \wedge \dot{\vec{r}} \)</p>
+<p>\( \vec{a}_B = \vec{a}_A + \dot{\omega} \vec{k} \wedge (B - A) + \omega \vec{k} \wedge (\omega \vec{k} \wedge (B-A)) \)</p>
+<hr>
+<h5>Centro instantâneo de rotação</h5>
+<p>No movimento plano, existe um ponto solidário ao sólido cuja velocidade é nula em um determinado instante. A este ponto dá-se o nome de Centro Instantâneo de Rotação (CIR).</p>
+<p>\( \vec{v}_P = \vec{v}_{CIR} + \vec{\omega} \wedge (P - CIR) \)</p>
+<p>\( \vec{v}_P = \omega \vec{k} \wedge r \vec{u} \)</p>
+<p>\( \vec{v}_P = \omega r \vec{k} \wedge \vec{u} = \omega r \vec{\tau} \)</p>
+<p>Portanto, a velocidade de um ponto \(P\) qualquer tem magnitude \(\omega r\) e é perpendicular a \(\vec{r}\).</p>
+<hr>
+<h5>Gradiente de velocidade</h5>
+<p>O \(CIR\) é definido para um determinado instante, podendo deslocar-se ao longo do tempo.</p>
+<p>\( \vec{v}_P = \vec{v}_{CIR} + \vec{\omega} \wedge (P - CIR) \)</p>
+<p>\( \vec{v}_P = \omega \vec{k} \wedge r \vec{u} \)</p>
+<p>\( \vec{v}_P = \omega r \vec{k} \wedge \vec{u} = \omega r \vec{\tau}\)</p>
+<hr>
+<h5>Determinação gráfica</h5>
+<p>Velocidades não paralelas</p>
+<p>Traçar retas perpendiculares aos vetores velocidade passando pelo respectivo ponto. A interseção define o \(CIR\).</p>
+<p>Velocidades paralelas</p>
+<p>Traçar uma reta que une a ponta dos vetores velocidade e corta a extensão da reta que une os pontos. A interseção define o \(CIR\).</p>
+<p>A partir da velocidade de um único ponto e velocidade angular do corpo</p>
+<p>Traçar uma reta perpendicular ao vetor velocidade. Posicionar o \(CIR\) sobre a reta a uma distância \(d = \frac{\|\vec{v}_A\|}{\omega}\).</p>
+<hr>
+<h5>Exercício</h5>
+<p style="text-align: justify; font-size: 25px; margin-right: 30px; margin-top: 0;">As extremidades \(A\) e \(B\)
+da barra \(AB\) de comprimento \(\ell\) percorrem os eixos \(O\vec{i}\) e \(O\vec{j}\). A velocidade de
+\(A\) é \(\vec{v}_A = v \vec{i}\), (\(v>0\), cte). Pede-se: </p>
+<ol>
+<li style="font-size: 25px;">Obter graficamente o CIR da barra.</li>
+<li style="font-size: 25px;">Achar, em função de \(\varphi\), (\(0 < \varphi < \pi/2\)), a velocidade angular \(\omega\) da barra, \(\vec{v}_B\) e \(\vec{a}_B\).</li> 
+</ol>
+
+
+
+
+</body>
+</html>
+
+
+
