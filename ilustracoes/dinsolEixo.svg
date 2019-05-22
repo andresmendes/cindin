@@ -10,13 +10,13 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="32.403755mm"
+   width="32.903755mm"
    height="13.880518mm"
-   viewBox="0 0 32.403754 13.880518"
+   viewBox="0 0 32.903754 13.880518"
    version="1.1"
    id="svg8"
-   inkscape:version="0.92.3 (unknown)"
-   sodipodi:docname="eixo.svg">
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   sodipodi:docname="dinsolEixo.svg">
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -25,8 +25,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="3.959798"
-     inkscape:cx="75.22331"
-     inkscape:cy="-2.4395866"
+     inkscape:cx="20.545543"
+     inkscape:cy="2.3651604"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -35,9 +35,9 @@
      fit-margin-right="0"
      fit-margin-bottom="0"
      inkscape:window-width="1366"
-     inkscape:window-height="744"
-     inkscape:window-x="0"
-     inkscape:window-y="24"
+     inkscape:window-height="705"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
      inkscape:window-maximized="1" />
   <defs
      id="defs2">
@@ -101,7 +101,7 @@
     </rdf:RDF>
   </metadata>
   <g
-     transform="translate(-110.93601,-155.77491)"
+     transform="translate(-110.43601,-155.77491)"
      id="layer1"
      inkscape:groupmode="layer"
      inkscape:label="Layer 1">
@@ -436,5 +436,25 @@
            d="m 207.84,737.7 v 0 0 0 0.01 0 0 0.01 0 0 0.01 0 0.01 0 l -0.01,0.01 v 0 0.01 0 l -0.01,0.01 v 0 l -0.01,0.01 v 0 0 0 l -0.01,0.01 v 0 0 h -0.01 v 0 0.01 h -0.01 v 0 0 h -0.01 v 0 l -0.01,0.01 v 0 h -0.01 v 0 0 h -0.01 -0.01 v 0 h -0.01 v 0 h -0.01 c -0.23,0 -0.95,-0.08 -1.21,-0.1 -0.08,-0.01 -0.19,-0.02 -0.19,-0.2 0,-0.12 0.09,-0.12 0.24,-0.12 0.47,0 0.49,-0.07 0.49,-0.17 l -0.03,-0.2 -1.44,-5.73 c -0.04,-0.14 -0.04,-0.16 -0.04,-0.22 0,-0.23 0.2,-0.28 0.29,-0.28 0.13,0 0.28,0.09 0.34,0.21 0.05,0.09 0.5,1.93 0.56,2.18 0.33,-0.03 1.15,-0.19 1.15,-0.85 0,-0.07 0,-0.11 -0.03,-0.21 -0.02,-0.12 -0.04,-0.24 -0.04,-0.35 0,-0.58 0.4,-0.98 0.92,-0.98 0.3,0 0.57,0.16 0.79,0.53 0.25,0.43 0.35,0.98 0.35,1 0,0.1 -0.09,0.1 -0.12,0.1 -0.09,0 -0.11,-0.04 -0.14,-0.18 -0.19,-0.72 -0.42,-1.23 -0.86,-1.23 -0.19,0 -0.32,0.11 -0.32,0.46 0,0.18 0.04,0.4 0.08,0.56 0.04,0.17 0.04,0.21 0.04,0.31 0,0.65 -0.63,0.94 -1.47,1.05 0.3,0.18 0.62,0.5 0.85,0.73 0.48,0.53 0.94,0.96 1.43,0.96 0.06,0 0.07,0 0.09,-0.01 0.11,-0.02 0.13,-0.02 0.21,-0.08 0.01,-0.01 0.01,-0.02 0.03,-0.04 -0.47,-0.03 -0.56,-0.42 -0.56,-0.54 0,-0.15 0.11,-0.34 0.38,-0.34 0.26,0 0.54,0.21 0.54,0.6 0,0.3 -0.23,0.63 -0.67,0.63 -0.28,0 -0.74,-0.08 -1.46,-0.88 -0.34,-0.37 -0.73,-0.77 -1.1,-0.92 z"
            inkscape:connector-curvature="0"
            style="fill:#000000;stroke-width:0" /></g>    </g>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.16029775px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 110.43601,163.23922 h 1.32982"
+       id="path910"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.16029775px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 111.76583,162.49751 h -1.32982"
+       id="path910-5"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.16029777px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 135.69511,163.23928 h 1.32982"
+       id="path910-55"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.16029777px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 137.02493,162.49757 h -1.32982"
+       id="path910-5-2"
+       inkscape:connector-curvature="0" />
   </g>
 </svg>
