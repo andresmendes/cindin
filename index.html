@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport"
 		content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=.2, user-scalable=yes">
-	<meta name="description" content="Notas de aula do curso de Cinemática e Dinâmica">
+	<meta name="description" content="Apresentações do curso de Cinemática e Dinâmica">
 	<meta name="author" content="André de S. Mendes">
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -28,52 +28,6 @@
 		link.href = window.location.search.match(/print-pdf/gi) ? 'reveal.js/css/print/pdf.css' : 'reveal.js/css/print/paper.css';
 		document.getElementsByTagName('head')[0].appendChild(link);
 	</script>
-
-	<!-- Inclusão de html -->
-	<script>
-			function includeHTML() {
-				var z, i, elmnt, file, xhttp;
-				/* Loop through a collection of all HTML elements: */
-				z = document.getElementsByTagName("*");
-				for (i = 0; i < z.length; i++) {
-					elmnt = z[i];
-					/*search for elements with a certain atrribute:*/
-					file = elmnt.getAttribute("w3-include-html");
-					if (file) {
-						/* Make an HTTP request using the attribute value as the file name: */
-						xhttp = new XMLHttpRequest();
-						xhttp.onreadystatechange = function () {
-							if (this.readyState == 4) {
-								if (this.status == 200) { elmnt.innerHTML = this.responseText; }
-								if (this.status == 404) { elmnt.innerHTML = "Page not found."; }
-								/* Remove the attribute, and call this function once more: */
-								elmnt.removeAttribute("w3-include-html");
-								includeHTML();
-							}
-						}
-						xhttp.open("GET", file, true);
-						xhttp.send();
-						/* Exit the function: */
-						return;
-					}
-				}
-			}
-		</script>
-	
-		<!-- Função para realce de cada tópico -->
-		<script>
-			function realceTopico(menu, topic) {
-				var topics = document.getElementById(menu).children[0].children[0].children;
-				console.log(topics.length)
-				for (i = 0, len = topics.length; i < len; i++) {
-					if (document.getElementById(menu).children[0].children[0].children[i].children[0].innerHTML == topic) {
-						document.getElementById(menu).children[0].children[0].children[i].setAttribute("style", "background-color: red;");
-						// } else {
-						// 	document.getElementById(menu).children[0].children[0].children[i].style.color = "black";
-					}
-				}
-			}
-		</script>
 
 </head>
 
@@ -112,38 +66,25 @@
 			<section>
 				<section id="inicial">
 
+
 					<div style="width:100%;position: relative; height: 700px;">
-						<div style="width:100%;position:absolute;top:250px;text-align: center">
+						<div style="width:100%; position:absolute ; top:300px; text-align: center">
 
 							<h3>ME7820 - Cinemática e Dinâmica</h3>
 
 						</div>
-						<div style="width:100%;position:absolute; bottom:30px;">
-
-							<a href="https://moodle.fei.edu.br/moodle/course/view.php?id=2620" target="_blank"
-								title="Moodle"><img src="ilustracoes/logoMoodle.png" alt="Moodle"
-									style="height: 65px; vertical-align: middle;"></a>
-
-							<a href="https://github.com/andresmendes/cindin" target="_blank" title="GitHub"><img
-									src="ilustracoes/logoGitHub.png" alt="GitHub"
-									style="height: 65px; vertical-align: middle;"></a>
+						<div style="width:100%; position:absolute; bottom:30px;">
 
 							<a href="#ajuda" class="button1" title="Ajuda"
 								style="position:absolute ; left:30px; bottom:0px">?</a>
 
-							<a href="#pdfexport" title="PDF Export" style="position:absolute ; left:90px;"><img
+							<a href="#pdfexport" title="PDF Export" style="position:absolute ; left:90px; bottom:0"><img
 									style="height:65px; vertical-align: middle;" src="ilustracoes/logoPDF.svg"
 									alt="PDF"></a>
 
 						</div>
 					</div>
 
-					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if
-						you open the
-						speaker
-						notes window (hit »S« on your keyboard).
-					</aside>
 				</section>
 
 				<section id="ajuda">
@@ -366,10 +307,6 @@
 
 				</section>
 
-				<section data-state="cinpontomovretevento">
-					<div id="cinpontomovretmenu" w3-include-html="auxfiles/content.html"></div>
-				</section>
-
 				<section>
 
 					<h5 style="margin-bottom: 50px">Posição</h5>
@@ -578,10 +515,6 @@
 					<h3>Cinemática do ponto</h3>
 					<h5>Movimento geral</h5>
 
-				</section>
-
-				<section data-state="cinpontomovgeralevento">
-						<div id="cinpontomovgeralmenu" w3-include-html="auxfiles/content.html"></div>
 				</section>
 
 				<section>
@@ -1245,10 +1178,6 @@
 
 				</section>
 
-				<section data-state="cincorpomovgeralevento">
-						<div id="cincorpomovgeralmenu" w3-include-html="auxfiles/content.html"></div>
-				</section>
-				
 				<section>
 
 					<iframe allowfullscreen=""
@@ -1558,10 +1487,6 @@
 
 				</section>
 
-				<section data-state="cincorpomovplanoevento">
-						<div id="cincorpomovplanomenu" w3-include-html="auxfiles/content.html"></div>
-					</section>
-
 				<section>
 
 					<iframe allowfullscreen=""
@@ -1734,10 +1659,6 @@
 
 				</section>
 
-				<section data-state="compmovevento">
-						<div id="compmovmenu" w3-include-html="auxfiles/content.html"></div>
-					</section>
-
 				<section>
 					<iframe allowfullscreen=""
 						data-src="https://www.youtube.com/embed/uXG_sccdtDQ?end=60;cc_load_policy=1;autoplay=1" width="100%"
@@ -1879,10 +1800,6 @@
 					<h5>Leis fundamentais</h5>
 
 				</section>
-
-				<section data-state="dpmleisevento">
-						<div id="dpmleismenu" w3-include-html="auxfiles/content.html"></div>
-					</section>
 
 				<section>
 					<iframe allowfullscreen=""
@@ -2090,10 +2007,6 @@
 					<h5>Teoremas gerais</h5>
 
 				</section>
-
-				<section data-state="dpmteoremasevento">
-						<div id="dpmteoremasmenu" w3-include-html="auxfiles/content.html"></div>
-					</section>
 
 				<section>
 					<iframe allowfullscreen=""
@@ -2314,10 +2227,6 @@
 
 				</section>
 
-				<section data-state="dsmtmbevento">
-						<div id="dsmtmbmenu" w3-include-html="auxfiles/content.html"></div>
-					</section>
-
 				<section>
 
 					<iframe allowfullscreen=""
@@ -2433,10 +2342,6 @@
 					<h3>Dinâmica dos sistemas materiais</h3>
 					<h5>TMA</h5>
 
-				</section>
-
-				<section data-state="dsmtmaevento">
-						<div id="dsmtmamenu" w3-include-html="auxfiles/content.html"></div>
 				</section>
 
 				<section>
@@ -2604,10 +2509,6 @@
 
 				</section>
 				
-				<section data-state="dinsolevento">
-					<div id="dinsolmenu" w3-include-html="auxfiles/content.html"></div>
-					</section>
-
 				<section>
 
 					<iframe allowfullscreen=""
@@ -2680,20 +2581,6 @@
 		<span title="Tópicos"
 			style="font-family: Helvetica, sans-serif ;font-size:22px;font-weight: bolder;cursor:pointer;background-color: rgba(255, 255, 255, 0.8);padding: 0px 5px 3px 5px ; margin:0;"
 			onclick="openNav();">&#9776;</span>
-		<!-- </p> -->
-
-		<!-- OUTRA OPÇÃO: -->
-		<!-- <span title="Tópicos" style="font-family: Helvetica, sans-serif ;font-size:25px;font-weight: 500;cursor:pointer;background-color: rgba(255, 255, 255, 0.8);padding:5px;"
-					onclick="openNav();">&#9776;</span> -->
-
-		<!-- SPEAKER NOTES BUTTON -->
-		<p style="margin-top:10px; padding:0;">
-			<label title="Anotações" class="switch">
-				<input type="checkbox" id='speakerSwitch' onclick="speakerNotes()">
-				<span class="slider"></span>
-			</label>
-		</p>
-		<!-- <a href="javascript:void(0)" class="closebtn" onclick="speakerNotes()">&times;</a> -->
 
 	</div>
 
@@ -2874,57 +2761,6 @@
 
 			pdfMaxPagesPerSlide: 1,
 			pdfSeparateFragments: false,
-		});
-
-		Reveal.addEventListener('cinpontomovretevento', function () {
-			// event.previousSlide, event.currentSlide, event.indexh, event.indexv
-			realceTopico("cinpontomovretmenu", "Cinemática do ponto: Movimento retilíneo");
-			// realceTopico("laplacemenu", "Transformada de Laplace");
-		});
-		Reveal.addEventListener('cinpontomovgeralevento', function () {
-			// event.previousSlide, event.currentSlide, event.indexh, event.indexv
-			realceTopico("cinpontomovgeralmenu", "Cinemática do ponto: Movimento geral");
-			// realceTopico("laplacemenu", "Transformada de Laplace");
-		});
-		Reveal.addEventListener('cincorpomovgeralevento', function () {
-			// event.previousSlide, event.currentSlide, event.indexh, event.indexv
-			realceTopico("cincorpomovgeralmenu", "Cinemática do corpo rígido: Movimento geral");
-			// realceTopico("laplacemenu", "Transformada de Laplace");
-		});
-		Reveal.addEventListener('cincorpomovplanoevento', function () {
-			// event.previousSlide, event.currentSlide, event.indexh, event.indexv
-			realceTopico("cincorpomovplanomenu", "Cinemática do corpo rígido: Movimento plano");
-			// realceTopico("laplacemenu", "Transformada de Laplace");
-		});
-		Reveal.addEventListener('compmovevento', function () {
-			// event.previousSlide, event.currentSlide, event.indexh, event.indexv
-			realceTopico("compmovmenu", "Composição de movimentos: Velocidade e aceleração");
-			// realceTopico("laplacemenu", "Transformada de Laplace");
-		});
-		Reveal.addEventListener('dpmleisevento', function () {
-			// event.previousSlide, event.currentSlide, event.indexh, event.indexv
-			realceTopico("dpmleismenu", "Dinâmica do ponto material: Leis fundamentais");
-			// realceTopico("laplacemenu", "Transformada de Laplace");
-		});
-		Reveal.addEventListener('dpmteoremasevento', function () {
-			// event.previousSlide, event.currentSlide, event.indexh, event.indexv
-			realceTopico("dpmteoremasmenu", "Dinâmica do ponto material: Teoremas gerais");
-			// realceTopico("laplacemenu", "Transformada de Laplace");
-		});
-		Reveal.addEventListener('dsmtmbevento', function () {
-			// event.previousSlide, event.currentSlide, event.indexh, event.indexv
-			realceTopico("dsmtmbmenu", "Dinâmica dos sistemas materiais: TMB");
-			// realceTopico("laplacemenu", "Transformada de Laplace");
-		});
-		Reveal.addEventListener('dsmtmaevento', function () {
-			// event.previousSlide, event.currentSlide, event.indexh, event.indexv
-			realceTopico("dsmtmamenu", "Dinâmica dos sistemas materiais: TMA");
-			// realceTopico("laplacemenu", "Transformada de Laplace");
-		});
-		Reveal.addEventListener('dinsolevento', function () {
-			// event.previousSlide, event.currentSlide, event.indexh, event.indexv
-			realceTopico("dinsolmenu", "Dinâmica dos sólidos");
-			// realceTopico("laplacemenu", "Transformada de Laplace");
 		});
 
 	</script>
